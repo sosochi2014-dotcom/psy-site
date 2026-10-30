@@ -561,23 +561,14 @@ body{background:var(--black);color:var(--white)}
           <span><a href="mailto:89288520222@mail.ru">89288520222@mail.ru</a></span>
         </div>
       </div>
-      <!-- Форма записи: виджет FormDesigner. Открывается после галочки согласия -->
+      <!-- Форма записи: Tally. Открывается после двух галочек согласия -->
       <div class="frame fd-card" id="form">
         <p class="fhint" id="fHint">Чтобы заполнить форму, отметьте обе галочки под ней.</p>
         <div class="fd-wrap locked" id="fdWrap" inert>
-          <!-- ===== Код для вставки FormDesigner (без изменений) ===== -->
-          <div id="form_247553_1"></div>
-          <script type="text/javascript">
-             (function (d, w, c) {
-                 (w[c] = w[c] || []).push({formId:247553,host:"formdesigner.ru",formHeight:100, el: "form_247553_1",center: 1,scroll: 0});
-                 var s = d.createElement("script"), g = "getElementsByTagName";
-                 s.type = "text/javascript"; s.charset="UTF-8"; s.async = true;
-                 s.src = (d.location.protocol == "https:" ? "https:" : "http:")+"//formdesigner.ru/js/iform.js?v=0.0.3";
-                 var h=d[g]("head")[0] || d[g]("body")[0];
-                 h.appendChild(s);
-             })(document, window, "fdforms");
-          </script>
-          <!-- ===== конец кода FormDesigner ===== -->
+          <!-- ===== Форма Tally ===== -->
+          <iframe data-tally-src="https://tally.so/embed/bZqV1g?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" loading="lazy" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0" title="Запись на консультацию"></iframe>
+          <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+          <!-- ===== конец формы Tally ===== -->
         </div>
         <div class="consents">
           <label class="agree" for="fPolicy"><input id="fPolicy" type="checkbox"><span>Я ознакомлен(а) с <a href="#doc-privacy" data-doc="privacy">Политикой обработки персональных данных</a> и принимаю условия <a href="#doc-oferta" data-doc="oferta">Публичной оферты</a></span></label>
