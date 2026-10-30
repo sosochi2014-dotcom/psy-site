@@ -1,0 +1,1176 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Олеся Васильева</title>
+<meta name="description" content="Олеся Васильева — практикующий психолог, эксперт по глубинному анализу личности. Онлайн и очно в Сочи.">
+<link rel="canonical" href="https://psy-olesiavasileva.ru/">
+<meta property="og:url" content="https://psy-olesiavasileva.ru/">
+<meta property="og:title" content="Олеся Васильева — практикующий психолог">
+<meta property="og:description" content="Эксперт по глубинному анализу личности. Онлайн и очно в Сочи."><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Roboto:wght@300;400;500&display=swap">
+<style>
+/* Layout: full-width bands alternating coal black and smoky gold "marble"; hero splits text and a round framed portrait */
+:root{
+  --black:#0A0A0B;
+  --card:#18181A;
+  --gold:#C9A961;
+  --gold-hi:#E3C98F;
+  --white:#F5F2EC;
+  --soft:#BDB8AE;
+  --muted:#8C887F;
+  --line:#2C2B2E;
+  --display:"Montserrat","Helvetica Neue",Arial,sans-serif;
+  --body:"Roboto","Helvetica Neue",Arial,sans-serif;
+  color-scheme:dark;
+}
+body{background:var(--black);color:var(--white)}
+
+#ov{background:var(--black);color:var(--white);font-family:var(--body);font-weight:300;font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+#ov *{box-sizing:border-box}
+#ov h1,#ov h2,#ov h3,#ov p{margin:0}
+#ov h1,#ov h2,#ov h3{font-family:var(--display);font-weight:300;color:var(--white);text-wrap:balance}
+#ov a{color:var(--gold)}
+#ov .w{max-width:1180px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+#ov section{position:relative;padding-block:clamp(80px,11vw,140px)}
+#ov .eyebrow{font-family:var(--display);font-size:11px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);font-weight:500}
+#ov .head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px;margin-bottom:clamp(48px,6vw,72px)}
+#ov h2{font-size:clamp(30px,3.8vw,48px);line-height:1.15;letter-spacing:.02em}
+#ov .orn{display:flex;align-items:center;gap:14px;color:var(--gold)}
+#ov .orn::before,#ov .orn::after{content:"";width:56px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+#ov .orn::after{transform:scaleX(-1)}
+#ov .orn i{width:6px;height:6px;border:1px solid var(--gold);transform:rotate(45deg);display:block}
+#ov .frame{border:1px solid rgba(201,169,97,.38);box-shadow:inset 0 0 0 5px var(--gap,var(--card)),inset 0 0 0 6px rgba(201,169,97,.14)}
+
+/* Фоны: угольный и «мрамор-дымка» */
+#ov .bg-coal{background:var(--black)}
+#ov .bg-marble{background:
+  radial-gradient(ellipse 60% 50% at 12% 18%,rgba(201,169,97,.10),transparent 70%),
+  radial-gradient(ellipse 55% 60% at 88% 82%,rgba(201,169,97,.08),transparent 70%),
+  radial-gradient(ellipse 40% 35% at 70% 20%,rgba(245,242,236,.035),transparent 70%),
+  linear-gradient(118deg,transparent 0 38%,rgba(227,201,143,.035) 44%,transparent 50% 66%,rgba(227,201,143,.025) 71%,transparent 76%),
+  linear-gradient(160deg,#16151A 0%,#1A1813 45%,#121214 100%)}
+#ov .bg-marble::before,#ov .bg-marble::after{content:"";position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,169,97,.35),transparent)}
+#ov .bg-marble::before{top:0}#ov .bg-marble::after{bottom:0}
+#ov .bg-marble .frame{--gap:#1B1A18}
+#ov .bg-marble .edu,#ov .bg-marble .price,#ov .bg-marble .test{background:rgba(24,23,22,.82)}
+
+/* Кнопки */
+#ov .btn-gold{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:0 40px;border:0;cursor:pointer;text-decoration:none;
+  background:linear-gradient(135deg,#B8954C 0%,#E3C98F 48%,#B8954C 100%);background-size:200% 100%;color:#141210;
+  font:500 12px/1 var(--display);letter-spacing:.22em;text-transform:uppercase;transition:background-position .6s,box-shadow .4s}
+#ov .btn-gold:hover{background-position:100% 0;box-shadow:0 10px 40px -12px rgba(201,169,97,.55)}
+#ov .btn-line{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;background:transparent;color:var(--white);
+  border:1px solid rgba(201,169,97,.55);cursor:pointer;text-decoration:none;font:400 11px/1 var(--display);letter-spacing:.22em;text-transform:uppercase;transition:color .4s,border-color .4s,background .4s}
+#ov .btn-line:hover{color:var(--gold-hi);border-color:var(--gold);background:rgba(201,169,97,.06)}
+#ov button:focus-visible,#ov a:focus-visible,#ov input:focus-visible,#ov select:focus-visible{outline:1px solid var(--gold-hi);outline-offset:4px}
+
+/* Шапка */
+#ov .nav{position:relative;z-index:2;border-bottom:1px solid var(--line)}
+#ov .nav .w{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-block:22px}
+#ov .logo{font-family:var(--display);font-weight:300;font-size:16px;letter-spacing:.34em;color:var(--white);text-decoration:none}
+#ov .links{display:flex;gap:34px}
+#ov .links a{font-family:var(--display);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .3s}
+#ov .links a:hover{color:var(--gold)}
+@media (max-width:960px){#ov .links{display:none}}
+@media (max-width:480px){#ov .nav .logo{font-size:13px;letter-spacing:.2em}#ov .nav .btn-line{padding:0 14px!important;letter-spacing:.14em}}
+
+/* Главный блок */
+#ov .hero{overflow:hidden;padding-block:clamp(80px,10vw,130px)}
+#ov .hero::before{content:"";position:absolute;right:-10%;top:50%;width:900px;height:900px;max-width:140vw;transform:translateY(-50%);
+  background:radial-gradient(closest-side,rgba(201,169,97,.12),rgba(201,169,97,.03) 55%,transparent);pointer-events:none}
+#ov .hero .w{position:relative;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(40px,6vw,90px);align-items:center}
+#ov .hero .txt{display:flex;flex-direction:column;gap:30px;align-items:flex-start}
+#ov .hero h1{font-weight:200;font-size:clamp(40px,6.4vw,84px);line-height:1.05;letter-spacing:.14em;
+  background:linear-gradient(180deg,#F5F2EC 35%,#D9C08A 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+#ov .hero .tag{font-family:var(--display);font-weight:300;font-size:clamp(20px,2.1vw,26px);line-height:1.55;color:var(--soft);max-width:30ch;letter-spacing:.02em}
+#ov .hero .tag b{display:block;font-weight:400;color:var(--gold-hi)}
+#ov .hero .note{font-size:13px;color:var(--muted);letter-spacing:.04em}
+#ov .hero .orn{justify-content:flex-start}
+#ov .hero .orn::before{display:none}
+@media (max-width:860px){
+  #ov .hero .w{grid-template-columns:minmax(0,1fr)}
+  #ov .hero .photo-wrap{order:-1}
+  #ov .hero .txt{align-items:center;text-align:center}
+  #ov .hero .orn{justify-content:center}
+  #ov .hero .orn::before{display:block}
+}
+
+/* Фото в золотой рамке */
+#ov .photo-wrap{display:flex;justify-content:center}
+#ov .portrait{position:relative;width:min(440px,100%);aspect-ratio:1/1;border-radius:50%;padding:16px;border:1px solid rgba(201,169,97,.75);
+  box-shadow:0 0 0 1px rgba(201,169,97,.08),0 0 60px rgba(201,169,97,.22),0 0 140px rgba(201,169,97,.10);animation:ovglow 6s ease-in-out infinite}
+#ov .portrait::before{content:"";position:absolute;inset:7px;border-radius:50%;border:1px solid rgba(201,169,97,.25);pointer-events:none}
+#ov .portrait .ph{width:100%;height:100%;border-radius:50%;overflow:hidden;background:radial-gradient(circle at 40% 35%,#2A2520,#121112)}
+#ov .portrait img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.08)}
+#ov .portrait.nophoto img{display:none}
+#ov .portrait .miss{display:none}
+#ov .portrait.nophoto .miss{display:flex;height:100%;align-items:center;justify-content:center;font-family:var(--display);font-size:12px;letter-spacing:.24em;color:var(--muted);text-transform:uppercase}
+@keyframes ovglow{0%,100%{box-shadow:0 0 0 1px rgba(201,169,97,.08),0 0 50px rgba(201,169,97,.18),0 0 120px rgba(201,169,97,.08)}50%{box-shadow:0 0 0 1px rgba(201,169,97,.12),0 0 70px rgba(201,169,97,.28),0 0 160px rgba(201,169,97,.12)}}
+
+/* Образование */
+#ov .grid3{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+@media (max-width:820px){#ov .grid3{grid-template-columns:minmax(0,1fr)}}
+#ov .edu{padding:46px 38px 40px;background:var(--card);display:flex;flex-direction:column;gap:22px}
+#ov .edu .num{font-family:var(--display);font-weight:200;font-size:40px;line-height:1;color:var(--gold)}
+#ov .edu h3{font-size:22px;line-height:1.25;letter-spacing:.04em}
+#ov .edu ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:16px;border-top:1px solid var(--line);padding-top:22px}
+#ov .edu li{font-size:15px;line-height:1.6;color:var(--soft);padding-left:20px;position:relative}
+#ov .edu li::before{content:"";position:absolute;left:0;top:.75em;width:8px;height:1px;background:var(--gold)}
+#ov .edu li small{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+
+/* Аккордеон */
+#ov .acc{max-width:860px;margin:0 auto;border-top:1px solid rgba(201,169,97,.35)}
+#ov .item{border-bottom:1px solid var(--line)}
+#ov .qh{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:28px;width:100%;padding:30px 4px;cursor:pointer}
+#ov .qh .n{font-family:var(--display);font-weight:300;font-size:14px;color:var(--gold);min-width:30px;letter-spacing:.1em}
+#ov .qh .t{flex:1;font-family:var(--display);font-weight:300;font-size:clamp(19px,2vw,25px);line-height:1.3;color:var(--white);transition:color .3s}
+#ov .qh:hover .t{color:var(--gold-hi)}
+#ov .qh .pm{position:relative;width:20px;height:20px;flex:none}
+#ov .qh .pm::before,#ov .qh .pm::after{content:"";position:absolute;left:50%;top:50%;width:18px;height:1px;background:var(--gold);transform:translate(-50%,-50%);transition:transform .4s}
+#ov .qh .pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+#ov .item.open .pm::after{transform:translate(-50%,-50%) rotate(0)}
+#ov .qb{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s ease}
+#ov .item.open .qb{grid-template-rows:1fr}
+#ov .qb>div{overflow:hidden}
+#ov .qb .in{padding:0 4px 34px 62px;display:flex;flex-direction:column;gap:16px}
+#ov .qb p{color:var(--soft);font-size:16px;line-height:1.85;max-width:62ch}
+#ov .qb ul{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+#ov .qb li{font-size:13px;letter-spacing:.04em;color:var(--gold-hi);border:1px solid rgba(201,169,97,.35);padding:6px 14px}
+@media (max-width:600px){#ov .qb .in{padding-left:4px}#ov .qh{gap:16px}}
+
+/* Цены */
+#ov .grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;align-items:stretch}
+@media (max-width:1060px){#ov .grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){#ov .grid4{grid-template-columns:minmax(0,1fr)}}
+#ov .price{position:relative;background:var(--card);padding:44px 30px 34px;display:flex;flex-direction:column;gap:20px;transition:transform .4s}
+#ov .price:hover{transform:translateY(-4px)}
+#ov .bg-marble .price.best{background:rgba(36,32,25,.92);border-color:var(--gold)}
+#ov .price .flag{position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--gold);color:#141210;font-family:var(--display);font-size:9px;letter-spacing:.24em;text-transform:uppercase;font-weight:500;padding:7px 14px;white-space:nowrap}
+#ov .price .kind{font-family:var(--display);font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+#ov .price h3{font-size:21px;line-height:1.3;font-weight:400;letter-spacing:.02em}
+#ov .price .dur{font-size:14px;color:var(--soft)}
+#ov .price .sum{font-family:var(--display);font-weight:200;font-size:40px;line-height:1;color:var(--gold-hi);font-variant-numeric:lining-nums tabular-nums}
+#ov .price .sum span{font-size:20px;color:var(--gold)}
+#ov .price .per{font-size:13px;color:var(--muted);margin-top:-12px}
+#ov .price ul{margin:0;padding:18px 0 0;border-top:1px solid var(--line);list-style:none;display:flex;flex-direction:column;gap:10px;flex:1}
+#ov .price li{font-size:14px;line-height:1.55;color:var(--soft);padding-left:18px;position:relative}
+#ov .price li::before{content:"";position:absolute;left:0;top:.72em;width:8px;height:1px;background:var(--gold)}
+#ov .price .btn-line,#ov .price .btn-gold{width:100%;min-height:50px;padding:0 16px}
+
+/* Отзывы и публикации */
+#ov .two{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(40px,6vw,90px);align-items:start}
+@media (max-width:900px){#ov .two{grid-template-columns:minmax(0,1fr)}}
+#ov .subhead{display:flex;flex-direction:column;gap:16px;margin-bottom:36px}
+#ov .subhead h2{font-size:clamp(28px,3vw,38px)}
+#ov .rev{display:flex;flex-direction:column;gap:22px}
+#ov .rev blockquote{margin:0;padding:34px 36px;background:var(--card);border-left:1px solid var(--gold);display:flex;flex-direction:column;gap:16px}
+#ov .rev blockquote p{font-family:var(--display);font-style:italic;font-weight:300;font-size:17px;line-height:1.7;color:var(--white)}
+#ov .rev cite{font-style:normal;font-family:var(--display);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+#ov .pubs{list-style:none;margin:0;padding:0;border-top:1px solid rgba(201,169,97,.35)}
+#ov .pubs li{border-bottom:1px solid var(--line)}
+#ov .pubs a{display:flex;flex-direction:column;gap:6px;padding:24px 0;text-decoration:none;transition:padding .35s}
+#ov .pubs a:hover{padding-left:10px}
+#ov .pubs .src{font-family:var(--display);font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+#ov .pubs .ttl{font-family:var(--display);font-weight:300;font-size:19px;line-height:1.4;color:var(--white)}
+#ov .pubs a:hover .ttl{color:var(--gold-hi)}
+#ov .ph-text{color:var(--muted)}
+#ov .rev cite span{color:var(--muted);letter-spacing:.14em;margin-left:6px}
+
+/* Появление блоков при прокрутке */
+#ov.rv-on .rv{opacity:0;transform:translateY(-32px);filter:brightness(.4);transition:opacity 1.2s cubic-bezier(.2,.7,.2,1),transform 1.2s cubic-bezier(.2,.7,.2,1),filter 1.4s ease;transition-delay:var(--d,0s)}
+#ov.rv-on .rv.in{opacity:1;transform:none;filter:none}
+
+/* Соцсети в подвале */
+#ov .fcontacts{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px}
+#ov .social{display:flex;flex-wrap:wrap;gap:14px}
+#ov .social a{position:relative;width:48px;height:48px;border-radius:50%;border:1px solid rgba(201,169,97,.55);display:grid;place-items:center;color:var(--gold);text-decoration:none;font-family:var(--display);font-size:11px;font-weight:500;letter-spacing:.06em;transition:background .4s,color .4s,box-shadow .4s,border-color .4s}
+#ov .social a:hover{background:var(--gold);color:#141210;border-color:var(--gold);box-shadow:0 0 24px rgba(201,169,97,.35)}
+#ov .social a sup{position:absolute;top:4px;right:6px;font-size:10px;line-height:1}
+#ov .fcontacts{align-items:flex-start}
+#ov .fcol{display:flex;flex-direction:column;gap:18px}
+#ov .fgroup{display:flex;flex-direction:column;gap:10px}
+#ov .flabel{font-family:var(--display);font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+#ov .role{display:flex;flex-direction:column;gap:10px}
+#ov .role-main{font-family:var(--display);font-weight:400;font-size:clamp(18px,1.8vw,22px);letter-spacing:.42em;text-transform:uppercase;color:var(--gold)}
+#ov .role-sub{font-family:var(--display);font-weight:400;font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted)}
+#ov .sub-h{font-family:var(--display);font-weight:300;font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--soft)}
+#ov h2.gold-h{color:var(--gold-hi)}
+#ov .phone{font-family:var(--display);font-weight:300;font-size:18px;letter-spacing:.06em;color:var(--white);text-decoration:none;border-bottom:1px solid rgba(201,169,97,.4);padding-bottom:2px;transition:color .3s}
+#ov .phone:hover{color:var(--gold-hi)}
+#ov .requisites{margin:0;font-size:13px;letter-spacing:.04em;color:var(--soft);font-variant-numeric:tabular-nums}
+#ov .meta-note{font-size:11px;line-height:1.6;color:#6A675F;max-width:90ch}
+#ov .contacts a{color:var(--soft);text-decoration:none;border-bottom:1px solid rgba(201,169,97,.35)}
+#ov .contacts a:hover{color:var(--gold-hi)}
+#ov .pub-open{all:unset;box-sizing:border-box;display:flex;flex-direction:column;gap:10px;width:100%;padding:28px 0;cursor:pointer;transition:padding .35s}
+#ov .pub-open:hover{padding-left:10px}
+#ov .pub-open:hover .ttl{color:var(--gold-hi)}
+#ov .pub-open .ex{font-size:15px;line-height:1.75;color:var(--soft)}
+#ov .pub-open .more{align-self:flex-start;margin-top:6px;font-family:var(--display);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid rgba(201,169,97,.45);padding-bottom:4px}
+#ov .pub-open:focus-visible{outline:1px solid var(--gold-hi);outline-offset:4px}
+#ov .reader .box{width:min(760px,100%);max-height:88vh;overflow-y:auto;text-align:left;align-items:stretch;gap:0;padding:clamp(40px,6vw,64px) clamp(24px,5vw,60px)}
+#ov .art{display:flex;flex-direction:column;gap:20px}
+#ov .art .src{font-family:var(--display);font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+#ov .art h3{font-size:clamp(28px,3.6vw,40px);line-height:1.15;font-weight:200;letter-spacing:.04em}
+#ov .art .lede{font-family:var(--display);font-weight:300;font-size:clamp(17px,1.8vw,20px);line-height:1.55;color:var(--gold-hi)}
+#ov .art p{color:var(--soft);font-size:16px;line-height:1.85;max-width:none}
+#ov .art .tip{position:relative;padding-left:28px;display:flex;flex-direction:column;gap:8px}
+#ov .art .tip::before{content:"";position:absolute;left:2px;top:.62em;width:7px;height:7px;border:1px solid var(--gold);transform:rotate(45deg)}
+#ov .art .tip b{font-weight:400;color:var(--white)}
+#ov .art h4{margin:10px 0 0;font-family:var(--display);font-weight:400;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+#ov .art .tech{display:flex;flex-direction:column;gap:14px;padding:22px 24px;border:1px solid rgba(201,169,97,.25)}
+#ov .art .tech div{display:flex;flex-direction:column;gap:4px}
+#ov .art .tech b{font-family:var(--display);font-weight:400;font-size:16px;color:var(--white)}
+#ov .modal.reader .box{text-align:left;align-items:stretch;gap:0}
+#ov .legaltext{gap:14px}
+#ov .legaltext h3{font-size:clamp(24px,3vw,32px)}
+#ov .legaltext h4{margin:18px 0 2px;font-size:12px;line-height:1.5}
+#ov .legaltext p{font-size:15px;line-height:1.75}
+#ov .legaltext p.sub{color:var(--white);font-weight:400}
+#ov .legaltext p.li{position:relative;padding-left:22px}
+#ov .legaltext p.li::before{content:"";position:absolute;left:4px;top:.85em;width:8px;height:1px;background:var(--gold)}
+#ov .art .final{border-top:1px solid rgba(201,169,97,.35);padding-top:22px;font-family:var(--display);font-weight:300;font-size:18px;line-height:1.6;color:var(--white)}
+
+/* Тест */
+#ov .test{max-width:820px;margin:0 auto;background:var(--card);padding:clamp(30px,5vw,60px)}
+#ov .bar{height:2px;background:var(--line);position:relative;overflow:hidden}
+#ov .bar i{position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,#9C7C3C,var(--gold-hi));box-shadow:0 0 14px rgba(227,201,143,.6);transition:width .5s ease}
+#ov .meta{display:flex;justify-content:space-between;gap:16px;margin-top:14px;font-family:var(--display);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
+#ov .acc .test{margin:8px 0 4px;max-width:none;width:100%;padding:clamp(24px,4vw,44px)}
+#ov .test-title{font-family:var(--display);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:18px}
+#ov .stage{min-height:360px;display:flex;flex-direction:column;justify-content:center;gap:30px;padding-top:36px}
+#ov .stage h3{font-size:clamp(23px,2.8vw,32px);line-height:1.3}
+#ov .stage .hint{color:var(--soft);font-size:16px;line-height:1.85;max-width:60ch}
+#ov .opts{display:flex;flex-direction:column;gap:12px}
+#ov .opt{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:18px;width:100%;min-height:62px;padding:14px 22px;border:1px solid var(--line);cursor:pointer;color:var(--soft);font-family:var(--body);font-size:16px;line-height:1.45;transition:border-color .3s,background .3s,color .3s}
+#ov .opt:hover{border-color:rgba(201,169,97,.55);color:var(--white)}
+#ov .opt.on{border-color:var(--gold);background:rgba(201,169,97,.08);color:var(--white)}
+#ov .opt .dot{flex:none;width:30px;height:30px;border:1px solid rgba(201,169,97,.5);border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-size:13px;color:var(--gold)}
+#ov .opt.on .dot{background:var(--gold);color:#141210}
+#ov .opt:focus-visible{outline:1px solid var(--gold-hi);outline-offset:3px}
+#ov .ctrl{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+#ov .ghost{all:unset;cursor:pointer;font-family:var(--display);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);padding:12px 0;transition:color .3s}
+#ov .ghost:hover{color:var(--gold)}
+#ov .ghost[disabled]{opacity:.3;cursor:default}
+#ov .score{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+#ov .score b{font-family:var(--display);font-weight:200;font-size:clamp(64px,9vw,100px);line-height:.9;color:var(--gold-hi);font-variant-numeric:lining-nums}
+#ov .score span{font-family:var(--display);font-size:12px;color:var(--muted);letter-spacing:.16em;text-transform:uppercase}
+#ov .scale{display:grid;grid-template-columns:22fr 14fr 28fr;gap:4px}
+#ov .scale div{display:flex;flex-direction:column;gap:8px;font-size:12px;color:var(--muted);letter-spacing:.04em}
+#ov .scale div::before{content:"";height:4px;background:var(--line)}
+#ov .scale div.on{color:var(--gold-hi)}
+#ov .scale div.on::before{background:var(--gold)}
+#ov .level{font-family:var(--display);font-weight:300;font-size:clamp(22px,2.6vw,30px);line-height:1.3}
+#ov .fade{animation:ovfade .5s ease}
+@keyframes ovfade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* Форма */
+#ov .book{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(40px,7vw,100px);align-items:center}
+@media (max-width:900px){#ov .book{grid-template-columns:minmax(0,1fr)}}
+#ov .book .txt{display:flex;flex-direction:column;gap:26px}
+#ov .book .txt p{color:var(--soft);max-width:44ch}
+#ov .book .orn{justify-content:flex-start}
+#ov .book .orn::before{display:none}
+#ov .contacts{display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--muted)}
+#ov .fd-card{--gap:var(--card);background:var(--card);padding:clamp(26px,4.5vw,52px);display:flex;flex-direction:column;gap:18px;min-width:0}
+#ov .fd-card .fhint{margin:0;text-align:left}
+#ov .consents{display:flex;flex-direction:column;gap:14px;padding-top:18px;border-top:1px solid var(--line)}
+#ov .copy-toast{position:fixed;left:50%;bottom:calc(28px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);z-index:120;background:#1B1A17;color:var(--white);border:1px solid rgba(201,169,97,.6);box-shadow:0 12px 40px rgba(0,0,0,.5);padding:14px 22px;font-size:14px;letter-spacing:.02em;max-width:calc(100% - 40px);text-align:center;opacity:0;visibility:hidden;transition:opacity .35s,transform .35s,visibility .35s}
+#ov .copy-toast.show{opacity:1;visibility:visible;transform:translate(-50%,0)}
+#ov .fd-wrap{position:relative;min-height:340px;transition:opacity .5s,filter .5s}
+#ov .fd-wrap.locked{opacity:.28;filter:grayscale(.6);pointer-events:none;user-select:none}
+#ov .fd-wrap iframe{display:block;width:100%!important;max-width:100%;border:0}
+#ov form{--gap:var(--card);background:var(--card);padding:clamp(30px,5vw,56px);display:flex;flex-direction:column;gap:26px}
+#ov .fld{display:flex;flex-direction:column;gap:6px}
+#ov label{font-family:var(--display);font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);font-weight:500}
+#ov input[type=text],#ov input[type=tel],#ov input[type=email],#ov select{width:100%;min-height:52px;background:transparent;border:0;border-bottom:1px solid #3A383B;border-radius:0;color:var(--white);font:300 17px var(--body);padding:10px 0;transition:border-color .3s}
+#ov select{cursor:pointer;-webkit-appearance:none;appearance:none;background-image:linear-gradient(45deg,transparent 50%,#C9A961 50%),linear-gradient(135deg,#C9A961 50%,transparent 50%);background-position:calc(100% - 12px) 50%,calc(100% - 7px) 50%;background-size:5px 5px;background-repeat:no-repeat;padding-right:28px}
+#ov select option{background:#18181A;color:#F5F2EC}
+#ov input:focus,#ov select:focus{outline:none;border-bottom-color:var(--gold)}
+#ov input::placeholder{color:#6A675F}
+#ov .agree{display:flex;gap:12px;align-items:flex-start;font-family:var(--body);font-weight:300;font-size:13px;line-height:1.6;color:var(--muted);text-transform:none;letter-spacing:0;cursor:pointer}
+#ov .agree input{width:18px;height:18px;margin-top:2px;accent-color:#C9A961;flex:none}
+#ov .agree a{color:var(--gold-hi);text-decoration:none;border-bottom:1px solid rgba(201,169,97,.4)}
+#ov .err{font-size:14px;color:#E6B38A;min-height:1.4em}
+#ov form .btn-gold{width:100%;min-height:66px;font-size:13px;transition:background-position .6s,box-shadow .4s,opacity .4s,filter .4s}
+#ov form .btn-gold:disabled{opacity:.35;filter:grayscale(.6);cursor:not-allowed;box-shadow:none;background-position:0 0}
+#ov .fhint{margin:-12px 0 0;font-size:12px;color:var(--muted);text-align:center;transition:opacity .4s}
+#ov .fhint.ok{opacity:0}
+#ov .flash{animation:ovflash 1.4s ease}
+@keyframes ovflash{0%{box-shadow:inset 0 0 0 5px var(--card),inset 0 0 0 6px rgba(201,169,97,.14),0 0 0 rgba(201,169,97,0)}35%{box-shadow:inset 0 0 0 5px var(--card),inset 0 0 0 6px rgba(201,169,97,.4),0 0 60px rgba(201,169,97,.25)}100%{box-shadow:inset 0 0 0 5px var(--card),inset 0 0 0 6px rgba(201,169,97,.14),0 0 0 rgba(201,169,97,0)}}
+
+/* Подвал */
+#ov footer{border-top:1px solid var(--line);padding-block:48px 40px}
+#ov footer .w{display:flex;flex-direction:column;gap:28px}
+#ov .frow{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;font-size:13px;color:var(--muted)}
+#ov .legal{display:flex;flex-wrap:wrap;gap:12px 32px;padding-top:24px;border-top:1px solid var(--line);font-size:13px}
+#ov .legal a{color:var(--soft);text-decoration:none;border-bottom:1px solid rgba(201,169,97,.35);transition:color .3s}
+#ov .legal a:hover{color:var(--gold-hi)}
+#ov .consent{font-size:12px;line-height:1.7;color:var(--muted);max-width:90ch}
+#ov .consent a{color:var(--soft);text-decoration:none;border-bottom:1px solid rgba(201,169,97,.35)}
+#ov .consent a:hover{color:var(--gold-hi)}
+
+/* Всплывающее окно */
+#ov .modal{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;
+  padding:max(20px,env(safe-area-inset-top,0px)) max(20px,env(safe-area-inset-right,0px)) max(20px,env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px));
+  background:rgba(6,6,7,.78);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);opacity:0;visibility:hidden;transition:opacity .45s,visibility .45s}
+#ov .modal.show{opacity:1;visibility:visible}
+#ov .modal .box{--gap:#151416;position:relative;width:min(520px,100%);background:linear-gradient(160deg,#1B1A17,#121113);padding:clamp(40px,6vw,64px) clamp(28px,5vw,56px);text-align:center;display:flex;flex-direction:column;align-items:center;gap:22px;
+  box-shadow:inset 0 0 0 5px #151416,inset 0 0 0 6px rgba(201,169,97,.2),0 30px 90px rgba(0,0,0,.6),0 0 80px rgba(201,169,97,.12);transform:translateY(16px) scale(.98);transition:transform .45s}
+#ov .modal.show .box{transform:none}
+#ov .modal .seal{width:72px;height:72px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;box-shadow:0 0 30px rgba(201,169,97,.3)}
+#ov .modal .seal svg{width:28px;height:28px}
+#ov .modal h3{font-size:clamp(22px,3vw,28px);line-height:1.3;font-weight:300;letter-spacing:.02em}
+#ov .modal p{color:var(--soft);font-size:16px;line-height:1.75;max-width:34ch}
+#ov .modal .x{position:absolute;top:14px;right:14px;width:44px;height:44px;background:transparent;border:0;cursor:pointer;color:var(--muted)}
+#ov .modal .x::before,#ov .modal .x::after{content:"";position:absolute;left:50%;top:50%;width:16px;height:1px;background:currentColor;transform:translate(-50%,-50%) rotate(45deg)}
+#ov .modal .x::after{transform:translate(-50%,-50%) rotate(-45deg)}
+#ov .modal .x:hover{color:var(--gold)}
+
+@media (prefers-reduced-motion:reduce){#ov *{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+<style>html,body{margin:0;padding:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<div id="ov">
+
+  <header class="nav">
+    <div class="w">
+      <a class="logo" href="#top">ОЛЕСЯ ВАСИЛЬЕВА</a>
+      <nav class="links" aria-label="Разделы сайта">
+        <a href="#edu">Квалификация</a>
+        <a href="#help">Запросы</a>
+        <a href="#prices">Услуги</a>
+        <a href="#anxiety" class="js-test">Тест</a>
+        <a href="#book">Запись</a>
+      </nav>
+      <a class="btn-line js-book" href="#book" style="min-height:44px;padding:0 22px">Записаться</a>
+    </div>
+  </header>
+
+  <!-- 1. ГЛАВНЫЙ БЛОК · угольный -->
+  <section class="hero bg-coal" id="top">
+    <div class="w">
+      <div class="txt">
+        <h1>ОЛЕСЯ<br>ВАСИЛЬЕВА</h1>
+        <div class="orn" aria-hidden="true"><i></i></div>
+        <p class="tag"><b>Практикующий психолог.</b>Эксперт по глубинному анализу личности.</p>
+      </div>
+      <div class="photo-wrap">
+        <div class="portrait" id="portrait">
+          <div class="ph">
+            <img src="data:image/jpeg;base64,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" alt="Олеся Васильева, практикующий психолог">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ОБРАЗОВАНИЕ · мрамор -->
+  <section class="bg-marble" id="edu">
+    <div class="w">
+      <div class="head">
+        <h2>Образование и квалификация:</h2>
+        <p class="sub-h">Профессиональная основа.</p>
+        <div class="orn" aria-hidden="true"><i></i></div>
+      </div>
+      <div class="grid3">
+        <article class="edu frame">
+          <div class="num">I</div>
+          <h3>Образование:</h3>
+          <ul>
+            <li>Магистр психологии<small>Государственное образовательное учреждение высшего профессионального образования Российско-Армянский (Славянский) университет, 2022 г.</small></li>
+            <li>Базовый консультант позитивной психотерапии<small>World Association for Positive and Transcultural Psychotherapy (WAPP), 2020 г.</small></li>
+          </ul>
+        </article>
+        <article class="edu frame">
+          <div class="num">II</div>
+          <h3>Сертификаты:</h3>
+          <ul>
+            <li>«Соматопсихология и Психокатализ»<small>Центр Психокатализа А. Ермошина, 2021 г.</small></li>
+            <li>«Психологическое консультирование с использованием positum-подхода»<small>Ассоциация Позитивной Психотерапии, 2020 г.</small></li>
+          </ul>
+        </article>
+        <article class="edu frame">
+          <div class="num">III</div>
+          <h3>Повышение квалификации:</h3>
+          <ul>
+            <li>«Когнитивно-поведенческая терапия как метод психокоррекционного воздействия при аддиктивном и суицидальном поведении, тревожно-депрессивных расстройствах»<small>АНО ДПО «Северо-Западная Академия дополнительного профессионального образования и профессионального обучения», 2022 г.</small></li>
+            <li>«Инновационные концепции в Позитивной Психотерапии»<small>Ассоциация Позитивной Психотерапии, 2020 г.</small></li>
+          </ul>
+        </article>
+        <article class="edu frame">
+          <div class="num">IV</div>
+          <h3>Профессиональные сообщества:</h3>
+          <ul>
+            <li>Член Общероссийской профессиональной психотерапевтической лиги (ОППЛ)</li>
+            <li>Член Ассоциации когнитивно-поведенческой терапии (АКПП)</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ПРОБЛЕМЫ · угольный -->
+  <section class="bg-coal" id="help">
+    <div class="w">
+      <div class="head">
+        <h2 class="gold-h">Какие проблемы я решаю:</h2>
+        <div class="orn" aria-hidden="true"><i></i></div>
+      </div>
+      <div class="acc" id="acc">
+        <div class="item">
+          <button class="qh" type="button" aria-expanded="false"><span class="n">01</span><span class="t">Детско-родительские отношения</span><span class="pm" aria-hidden="true"></span></button>
+          <div class="qb"><div><div class="in">
+            <p>Разбираем, как опыт детства влияет на вашу взрослую жизнь, и выстраиваем тёплые отношения с собственными детьми и родителями, без чувства вины и бесконечных конфликтов.</p>
+            <ul><li>Обиды на родителей</li><li>Конфликты с детьми</li><li>Гиперопека и контроль</li><li>Сепарация</li></ul>
+          </div></div></div>
+        </div>
+        <div class="item">
+          <button class="qh" type="button" aria-expanded="false"><span class="n">02</span><span class="t">Коррекция самооценки</span><span class="pm" aria-hidden="true"></span></button>
+          <div class="qb"><div><div class="in">
+            <p>Находим источник внутреннего критика и учимся опираться на себя: признавать свои достижения, говорить «нет» и не зависеть от чужой оценки.</p>
+            <ul><li>Неуверенность</li><li>Синдром самозванца</li><li>Перфекционизм</li><li>Зависимость от одобрения</li></ul>
+          </div></div></div>
+        </div>
+        <div class="item">
+          <button class="qh" type="button" aria-expanded="false"><span class="n">03</span><span class="t">Эмоциональные состояния</span><span class="pm" aria-hidden="true"></span></button>
+          <div class="qb"><div><div class="in">
+            <p>Помогаю распознавать и проживать чувства, а не подавлять их. Работаем с апатией, раздражительностью, эмоциональными качелями и ощущением пустоты.</p>
+            <ul><li>Апатия и выгорание</li><li>Раздражительность</li><li>Подавленные эмоции</li><li>Чувство пустоты</li></ul>
+          </div></div></div>
+        </div>
+        <div class="item" id="anxiety">
+          <button class="qh" type="button" aria-expanded="false"><span class="n">04</span><span class="t">Тревожные состояния и страхи</span><span class="pm" aria-hidden="true"></span></button>
+          <div class="qb"><div><div class="in">
+            <p>Находим корни тревоги и осваиваем способы с ней справляться: от быстрых техник успокоения до глубинной работы с причиной страхов.</p>
+            <ul><li>Генерализованная тревога</li><li>Панические атаки</li><li>Страх будущего</li><li>Навязчивые мысли</li></ul>
+            <div class="test frame" id="test">
+              <div class="test-title">Шкала тревоги Бека</div>
+              <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="21" aria-valuenow="0" aria-label="Прогресс теста" id="bar"><i id="barFill"></i></div>
+              <div class="meta"><span id="metaL">Начало</span><span id="metaR">0 / 21</span></div>
+              <div class="stage" id="stage" aria-live="polite"></div>
+            </div>
+          </div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. УСЛУГИ И ЦЕНЫ · мрамор -->
+  <section class="bg-marble" id="prices">
+    <div class="w">
+      <div class="head">
+        <h2>Услуги и цены:</h2>
+        <p class="sub-h">Форматы работы</p>
+        <div class="orn" aria-hidden="true"><i></i></div>
+      </div>
+      <div class="grid4">
+        <article class="price frame">
+          <div class="kind">Первый шаг</div>
+          <h3>Сессия-знакомство:</h3>
+          <div class="dur">20 минут</div>
+          <div class="sum">0 <span>₽</span></div>
+          <ul><li>Знакомство и ваш запрос</li><li>Ответы на вопросы о работе</li><li>Решение без обязательств</li></ul>
+          <a class="btn-line js-book" href="#book" data-service="intro">Записаться</a>
+        </article>
+        <article class="price frame">
+          <div class="kind">Разовая встреча</div>
+          <h3>Сессия:</h3>
+          <div class="dur">60 минут</div>
+          <div class="sum">5 000 <span>₽</span></div>
+          <ul><li>Глубокая работа с запросом</li><li>Онлайн или очно</li><li>Рекомендации после встречи</li></ul>
+          <a class="btn-line js-book" href="#book" data-service="single">Записаться</a>
+        </article>
+        <article class="price frame best">
+          <div class="flag">Оптимальный</div>
+          <div class="kind">Пакет</div>
+          <h3>«Оптимальный»</h3>
+          <div class="dur">5 + 1 сессия в подарок</div>
+          <div class="sum">25 000 <span>₽</span></div>
+          <div class="per">≈ 4 167 ₽ за сессию</div>
+          <ul><li>6 сессий по 60 минут</li><li>Устойчивый результат</li><li>Поддержка между встречами</li></ul>
+          <a class="btn-gold js-book" href="#book" data-service="optimal">Выбрать пакет</a>
+        </article>
+        <article class="price frame">
+          <div class="kind">Пакет</div>
+          <h3>«Расширенный»</h3>
+          <div class="dur">10 сессий</div>
+          <div class="sum">35 000 <span>₽</span></div>
+          <div class="per">3 500 ₽ за сессию</div>
+          <ul><li>10 сессий по 60 минут</li><li>Глубинная проработка</li><li>Индивидуальный план работы</li></ul>
+          <a class="btn-line js-book" href="#book" data-service="extended">Выбрать пакет</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. ОТЗЫВЫ И ПУБЛИКАЦИИ · угольный -->
+  <section class="bg-coal" id="reviews">
+    <div class="w two">
+      <div>
+        <div class="subhead">
+          <div class="eyebrow">Отзывы</div>
+          <h2>Слова клиентов:</h2>
+        </div>
+        <div class="rev">
+          <blockquote>
+            <p>Благодарю Олесю за грамотную психодиагностику и за обучение техникам самопомощи.</p>
+            <cite>Анна <span>(Тревога)</span></cite>
+          </blockquote>
+          <blockquote>
+            <p>Обращалась для работы с самооценкой, на самом деле интересное путешествие к себе. Отдельная благодарность за предоставление материалов для самопомощи.</p>
+            <cite>Ольга <span>(Вопрос самооценки)</span></cite>
+          </blockquote>
+          <blockquote>
+            <p>Подарили сертификат на прохождение 5 сессий. Олеся помогла мне в нескольких вопросах, которые мешали мне жить, научила техникам, даже проводили эксперимент. Всё очень понравилось, выражаю глубокую благодарность.</p>
+            <cite>Евгения К. <span>(Отношения)</span></cite>
+          </blockquote>
+        </div>
+      </div>
+      <div>
+        <div class="subhead">
+          <div class="eyebrow">Публикации</div>
+          <h2>Статьи</h2>
+        </div>
+        <ul class="pubs">
+          <li><button class="pub-open" type="button" id="pubOpen" aria-haspopup="dialog">
+            <span class="src">Статья · 2022</span>
+            <span class="ttl">Прокрастинация</span>
+            <span class="ex">Как совместить обучение, работу и повседневные дела? Часто «не хватает времени» — это совсем не про время.</span>
+            <span class="more">Читать статью</span>
+          </button></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. ЗАПИСЬ · мрамор -->
+  <section class="bg-marble" id="book">
+    <div class="w book">
+      <div class="txt">
+        <div class="eyebrow">Запись на приём.</div>
+        <h2>Сделайте первый шаг</h2>
+        <div class="orn" aria-hidden="true"><i></i></div>
+        <p>Оставьте контакты, и я свяжусь с вами в течение дня, чтобы подобрать удобное время.</p>
+        <div class="contacts">
+          <span>Онлайн и очно в Сочи.</span>
+          <span><a href="tel:+79288520222">8 (928) 852-02-22</a></span>
+          <span><a href="https://t.me/psyolesiavasileva" target="_blank" rel="noopener">Telegram</a> · <a href="https://wa.me/79288520222" target="_blank" rel="noopener">WhatsApp</a></span>
+          <span><a href="mailto:89288520222@mail.ru">89288520222@mail.ru</a></span>
+        </div>
+      </div>
+      <!-- Форма записи: виджет FormDesigner. Открывается после галочки согласия -->
+      <div class="frame fd-card" id="form">
+        <p class="fhint" id="fHint">Чтобы заполнить форму, отметьте обе галочки под ней.</p>
+        <div class="fd-wrap locked" id="fdWrap" inert>
+          <!-- ===== Код для вставки FormDesigner (без изменений) ===== -->
+          <div id="form_247520_1"></div>
+          <script type="text/javascript">
+             (function (d, w, c) {
+                 (w[c] = w[c] || []).push({formId:247520,host:"formdesigner.ru",formHeight:100, el: "form_247520_1",center: 1,scroll: 0});
+                 var s = d.createElement("script"), g = "getElementsByTagName";
+                 s.type = "text/javascript"; s.charset="UTF-8"; s.async = true;
+                 s.src = (d.location.protocol == "https:" ? "https:" : "http:")+"//formdesigner.ru/js/iform.js?v=0.0.3";
+                 var h=d[g]("head")[0] || d[g]("body")[0];
+                 h.appendChild(s);
+             })(document, window, "fdforms");
+          </script>
+          <!-- ===== конец кода FormDesigner ===== -->
+        </div>
+        <div class="consents">
+          <label class="agree" for="fPolicy"><input id="fPolicy" type="checkbox"><span>Я ознакомлен(а) с <a href="#doc-privacy" data-doc="privacy">Политикой обработки персональных данных</a> и принимаю условия <a href="#doc-oferta" data-doc="oferta">Публичной оферты</a></span></label>
+          <label class="agree" for="fAgree"><input id="fAgree" type="checkbox"><span>Даю <a href="#doc-agree" data-doc="agree">Согласие на обработку персональных данных</a></span></label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="w">
+      <div class="frow">
+        <span class="logo">ОЛЕСЯ ВАСИЛЬЕВА</span>
+        <span>Практикующий психолог · Онлайн и очно в Сочи.</span>
+        <span>psy-olesiavasileva.ru · © 2026</span>
+      </div>
+      <!-- ===== КОНТАКТЫ ===== -->
+      <div class="fcontacts">
+        <div class="fcol">
+          <a class="phone" href="tel:+79288520222">8 (928) 852-02-22</a>
+          <div class="fgroup">
+            <span class="flabel">Мессенджеры</span>
+            <nav class="social" aria-label="Мессенджеры">
+              <a href="https://t.me/psyolesiavasileva" target="_blank" rel="noopener" aria-label="Telegram" title="Telegram">TG</a>
+              <a href="https://wa.me/79288520222" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">WA</a>
+            </nav>
+          </div>
+          <a class="phone" href="mailto:89288520222@mail.ru" style="font-size:15px;align-self:flex-start">89288520222@mail.ru</a>
+        </div>
+        <div class="fgroup">
+        <span class="flabel">Соцсети</span>
+        <nav class="social" aria-label="Социальные сети">
+          <a href="https://vk.ru/olesia__vasileva" target="_blank" rel="noopener" aria-label="ВКонтакте" title="ВКонтакте">VK</a>
+          <a href="https://www.instagram.com/mrs.vasileva_olesia/" target="_blank" rel="noopener" aria-label="Instagram*" title="Instagram*">IG<sup>*</sup></a>
+          <a href="https://www.facebook.com/share/1AMwwcmnd8/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook*" title="Facebook*">FB<sup>*</sup></a>
+          <a href="https://www.b17.ru/vasileva_olesya_123rus/" target="_blank" rel="noopener" aria-label="Профиль на B17" title="Профиль на B17" style="font-size:10px">B17</a>
+        </nav>
+        </div>
+      </div>
+      <p class="consent">Отправляя заявку на сайте, вы соглашаетесь с <a href="#doc-privacy" data-doc="privacy">Политикой конфиденциальности</a> и <a href="#doc-agree" data-doc="agree">Согласием на обработку персональных данных</a>.</p>
+      <nav class="legal" aria-label="Документы">
+        <a href="#doc-privacy" data-doc="privacy">Политика конфиденциальности</a>
+        <a href="#doc-agree" data-doc="agree">Согласие на обработку персональных данных</a>
+        <a href="#doc-oferta" data-doc="oferta">Публичная оферта</a>
+      </nav>
+      <p class="requisites">Васильева Олеся Анверовна · ИНН 390406455935</p>
+      <p class="meta-note">* Instagram и Facebook принадлежат компании Meta Platforms Inc., признанной экстремистской организацией; её деятельность запрещена на территории Российской Федерации.</p>
+    </div>
+  </footer>
+
+  <!-- Всплывающее окно -->
+  <div class="modal reader doc" id="doc-privacy" role="dialog" aria-modal="true" aria-labelledby="doc-privacy-t" aria-hidden="true">
+    <div class="box frame">
+      <button class="x doc-close" type="button" aria-label="Закрыть документ"></button>
+      <article class="art legaltext">
+        <div class="src">Документ</div>
+        <h3 id="doc-privacy-t">Политика обработки и защиты персональных данных</h3>
+        
+        <h4>1. Общие положения</h4>
+        <p>Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных (далее - Закон о персональных данных) и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые Васильевой Олесей Анверовной (далее – Оператор).</p>
+        <p>1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</p>
+        <p>1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта https://psy-olesiavasileva.ru</p>
+        <h4>2. Основные понятия, используемые в Политике</h4>
+        <p>2.1. Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники.</p>
+        <p>2.2. Блокирование персональных данных – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных).</p>
+        <p>2.3. Веб-сайт – совокупность графических и информационных материалов, а также программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу https://psy-olesiavasileva.ru</p>
+        <p>2.4. Информационная система персональных данных — совокупность содержащихся в базах данных персональных данных, и обеспечивающих их обработку информационных технологий и технических средств.</p>
+        <p>2.5. Обезличивание персональных данных — действия, в результате которых невозможно определить без использования дополнительной информации принадлежность персональных данных конкретному Пользователю или иному субъекту персональных данных.</p>
+        <p>2.6. Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.</p>
+        <p>2.7. Оператор – государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.</p>
+        <p>2.8. Персональные данные – любая информация, относящаяся прямо или косвенно к определенному или определяемому Пользователю веб-сайта https://psy-olesiavasileva.ru.</p>
+        <p>2.9. Пользователь – любой посетитель веб-сайта https://psy-olesiavasileva.ru</p>
+        <p>2.10. Предоставление персональных данных – действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц.</p>
+        <p>2.11. Распространение персональных данных – любые действия, направленные на раскрытие персональных данных неопределенному кругу лиц (передача персональных данных) или на ознакомление с персональными данными неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой информации, размещение в информационно-телекоммуникационных сетях или предоставление доступа к персональным данным каким-либо иным способом.</p>
+        <p>2.12. Трансграничная передача персональных данных – передача персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому или иностранному юридическому лицу.</p>
+        <p>2.13. Уничтожение персональных данных – любые действия, в результате которых персональные данные уничтожаются безвозвратно с невозможностью дальнейшего восстановления содержания персональных данных в информационной системе персональных данных и (или) уничтожаются материальные носители персональных данных.</p>
+        <h4>3. Основные права и обязанности Оператора</h4>
+        <p class="sub">3.1. Оператор имеет право:</p>
+        <p class="li">получать от субъекта персональных данных достоверные информацию и/или документы, содержащие персональные данные;</p>
+        <p class="li">в случае отзыва субъектом персональных данных согласия на обработку персональных данных Оператор вправе продолжить обработку персональных данных без согласия субъекта персональных данных при наличии оснований, указанных в Законе о персональных данных;</p>
+        <p class="li">самостоятельно определять состав и перечень мер, необходимых и достаточных для обеспечения выполнения обязанностей, предусмотренных Законом о персональных данных и принятыми в соответствии с ним нормативными правовыми актами, если иное не предусмотрено Законом о персональных данных или другими федеральными законами.</p>
+        <p class="sub">3.2. Оператор обязан:</p>
+        <p class="li">предоставлять субъекту персональных данных по его просьбе информацию, касающуюся обработки его персональных данных;</p>
+        <p class="li">организовывать обработку персональных данных в порядке, установленном действующим законодательством РФ;</p>
+        <p class="li">отвечать на обращения и запросы субъектов персональных данных и их законных представителей в соответствии с требованиями Закона о персональных данных;</p>
+        <p class="li">сообщать в уполномоченный орган по защите прав субъектов персональных данных по запросу этого органа необходимую информацию в течение 30 дней с даты получения такого запроса;</p>
+        <p class="li">публиковать или иным образом обеспечивать неограниченный доступ к настоящей Политике в отношении обработки персональных данных;</p>
+        <p class="li">принимать правовые, организационные и технические меры для защиты персональных данных от неправомерного или случайного доступа к ним, уничтожения, изменения, блокирования, копирования, предоставления, распространения персональных данных, а также от иных неправомерных действий в отношении персональных данных;</p>
+        <p class="li">прекратить передачу (распространение, предоставление, доступ) персональных данных, прекратить обработку и уничтожить персональные данные в порядке и случаях, предусмотренных Законом о персональных данных;</p>
+        <p class="li">исполнять иные обязанности, предусмотренные Законом о персональных данных.</p>
+        <h4>4. Основные права и обязанности субъектов персональных данных</h4>
+        <p class="sub">4.1. Субъекты персональных данных имеют право:</p>
+        <p class="li">получать информацию, касающуюся обработки его персональных данных, за исключением случаев, предусмотренных федеральными законами. Сведения предоставляются субъекту персональных данных Оператором в доступной форме, и в них не должны содержаться персональные данные, относящиеся к другим субъектам персональных данных, за исключением случаев, когда имеются законные основания для раскрытия таких персональных данных. Перечень информации и порядок ее получения установлен Законом о персональных данных;</p>
+        <p class="li">требовать от оператора уточнения его персональных данных, их блокирования или уничтожения в случае, если персональные данные являются неполными, устаревшими, неточными, незаконно полученными или не являются необходимыми для заявленной цели обработки, а также принимать предусмотренные законом меры по защите своих прав;</p>
+        <p class="li">выдвигать условие предварительного согласия при обработке персональных данных в целях продвижения на рынке товаров, работ и услуг;</p>
+        <p class="li">на отзыв согласия на обработку персональных данных;</p>
+        <p class="li">обжаловать в уполномоченный орган по защите прав субъектов персональных данных или в судебном порядке неправомерные действия или бездействие Оператора при обработке его персональных данных;</p>
+        <p class="li">на осуществление иных прав, предусмотренных законодательством РФ.</p>
+        <p class="sub">4.2. Субъекты персональных данных обязаны:</p>
+        <p class="li">предоставлять Оператору достоверные данные о себе;</p>
+        <p class="li">сообщать Оператору об уточнении (обновлении, изменении) своих персональных данных.</p>
+        <p>4.3. Лица, передавшие Оператору недостоверные сведения о себе, либо сведения о другом субъекте персональных данных без согласия последнего, несут ответственность в соответствии с законодательством РФ.</p>
+        <h4>5. Оператор может обрабатывать следующие персональные данные Пользователя</h4>
+        <p>5.1. Фамилия, имя, отчество, дата рождения.</p>
+        <p>5.2. Электронный адрес.</p>
+        <p>5.3. Номера телефонов.</p>
+        <p>5.4. Также на сайте происходит сбор и обработка обезличенных данных о посетителях (в т.ч. файлов «cookie») с помощью сервисов интернет-статистики (Яндекс Метрика и Гугл Аналитика и других).</p>
+        <p>5.5. Вышеперечисленные данные далее по тексту Политики объединены общим понятием Персональные данные.</p>
+        <p>5.6. Обработка специальных категорий персональных данных, касающихся расовой, национальной принадлежности, политических взглядов, религиозных или философских убеждений, интимной жизни, Оператором не осуществляется.</p>
+        <h4>6. Принципы обработки персональных данных</h4>
+        <p>6.1. Обработка персональных данных осуществляется на законной и справедливой основе.</p>
+        <p>6.2. Обработка персональных данных ограничивается достижением конкретных, заранее определенных и законных целей. Не допускается обработка персональных данных, несовместимая с целями сбора персональных данных.</p>
+        <p>6.3. Не допускается объединение баз данных, содержащих персональные данные, обработка которых осуществляется в целях, несовместимых между собой.</p>
+        <p>6.4. Обработке подлежат только персональные данные, которые отвечают целям их обработки.</p>
+        <p>6.5. Содержание и объем обрабатываемых персональных данных соответствуют заявленным целям обработки. Не допускается избыточность обрабатываемых персональных данных по отношению к заявленным целям их обработки.</p>
+        <p>6.6. При обработке персональных данных обеспечивается точность персональных данных, их достаточность, а в необходимых случаях и актуальность по отношению к целям обработки персональных данных. Оператор принимает необходимые меры и/или обеспечивает их принятие по удалению или уточнению неполных или неточных данных.</p>
+        <p>6.7. Хранение персональных данных осуществляется в форме, позволяющей определить субъекта персональных данных, не дольше, чем этого требуют цели обработки персональных данных, если срок хранения персональных данных не установлен федеральным законом, договором, стороной которого, выгодоприобретателем или поручителем по которому является субъект персональных данных. Обрабатываемые персональные данные уничтожаются либо обезличиваются по достижении целей обработки или в случае утраты необходимости в достижении этих целей, если иное не предусмотрено федеральным законом.</p>
+        <h4>7. Цели обработки персональных данных</h4>
+        <p class="sub">7.1. Цель обработки персональных данных Пользователя:</p>
+        <p class="li">информирование Пользователя посредством отправки электронных писем;</p>
+        <p class="li">заключение, исполнение и прекращение гражданско-правовых договоров;</p>
+        <p class="li">предоставление доступа Пользователю к сервисам, информации и/или материалам, содержащимся на веб-сайте https://psy-olesiavasileva.ru</p>
+        <p>7.2. Также Оператор имеет право направлять Пользователю уведомления о новых продуктах и услугах, специальных предложениях и различных событиях. Пользователь всегда может отказаться от получения информационных сообщений, направив Оператору письмо на адрес электронной почты 89288520222@mail.ru с пометкой «Отказ от уведомлений о новых продуктах и услугах и специальных предложениях».</p>
+        <p>7.3. Обезличенные данные Пользователей, собираемые с помощью сервисов интернет-статистики, служат для сбора информации о действиях Пользователей на сайте, улучшения качества сайта и его содержания.</p>
+        <h4>8. Правовые основания обработки персональных данных</h4>
+        <p>8.1. Правовыми основаниями обработки персональных данных Оператором являются: Гражданский кодекс РФ, Федеральный закон № 152-ФЗ "О персональных данных", Федеральный закон № 149-ФЗ "Об информации, информационных технологиях и о защите информации"</p>
+        <p>8.2. Оператор обрабатывает персональные данные Пользователя только в случае их заполнения и/или отправки Пользователем самостоятельно через специальные формы, расположенные на сайте https://psy-olesiavasileva.ru или направленные Оператору посредством электронной почты. Заполняя соответствующие формы и/или отправляя свои персональные данные Оператору, Пользователь выражает свое согласие с данной Политикой.</p>
+        <p>8.3. Оператор обрабатывает обезличенные данные о Пользователе в случае, если это разрешено в настройках браузера Пользователя (включено сохранение файлов «cookie» и использование технологии JavaScript).</p>
+        <p>8.4. Субъект персональных данных самостоятельно принимает решение о предоставлении его персональных данных и дает согласие свободно, своей волей и в своем интересе.</p>
+        <h4>9. Условия обработки персональных данных</h4>
+        <p>9.1. Обработка персональных данных осуществляется с согласия субъекта персональных данных на обработку его персональных данных.</p>
+        <p>9.2. Обработка персональных данных необходима для достижения целей, предусмотренных международным договором Российской Федерации или законом, для осуществления возложенных законодательством Российской Федерации на оператора функций, полномочий и обязанностей.</p>
+        <p>9.3. Обработка персональных данных необходима для осуществления правосудия, исполнения судебного акта, акта другого органа или должностного лица, подлежащих исполнению в соответствии с законодательством Российской Федерации об исполнительном производстве.</p>
+        <p>9.4. Обработка персональных данных необходима для исполнения договора, стороной которого либо выгодоприобретателем или поручителем по которому является субъект персональных данных, а также для заключения договора по инициативе субъекта персональных данных или договора, по которому субъект персональных данных будет являться выгодоприобретателем или поручителем.</p>
+        <p>9.5. Обработка персональных данных необходима для осуществления прав и законных интересов оператора или третьих лиц либо для достижения общественно значимых целей при условии, что при этом не нарушаются права и свободы субъекта персональных данных.</p>
+        <p>9.6. Осуществляется обработка персональных данных, доступ неограниченного круга лиц к которым предоставлен субъектом персональных данных либо по его просьбе (далее – общедоступные персональные данные).</p>
+        <p>9.7. Осуществляется обработка персональных данных, подлежащих опубликованию или обязательному раскрытию в соответствии с федеральным законом.</p>
+        <h4>10. Порядок сбора, хранения, передачи и других видов обработки персональных данных</h4>
+        <p>Безопасность персональных данных, которые обрабатываются Оператором, обеспечивается путем реализации правовых, организационных и технических мер, необходимых для выполнения в полном объеме требований действующего законодательства в области защиты персональных данных.</p>
+        <p>10.1. Оператор обеспечивает сохранность персональных данных и принимает все возможные меры, исключающие доступ к персональным данным неуполномоченных лиц.</p>
+        <p>10.2. Персональные данные Пользователя никогда, ни при каких условиях не будут переданы третьим лицам, за исключением случаев, связанных с исполнением действующего законодательства либо в случае, если субъектом персональных данных дано согласие Оператору на передачу данных третьему лицу для исполнения обязательств по гражданско-правовому договору.</p>
+        <p>10.3. В случае выявления неточностей в персональных данных, Пользователь может актуализировать их самостоятельно, путем направления Оператору уведомление на адрес электронной почты Оператора 89288520222@mail.ru с пометкой «Актуализация персональных данных».</p>
+        <p>10.4. Срок обработки персональных данных определяется достижением целей, для которых были собраны персональные данные, если иной срок не предусмотрен договором или действующим законодательством.</p>
+        <p>Пользователь может в любой момент отозвать свое согласие на обработку персональных данных, направив Оператору уведомление посредством электронной почты на электронный адрес Оператора 89288520222@mail.ru с пометкой «Отзыв согласия на обработку персональных данных».</p>
+        <p>10.5. Вся информация, которая собирается сторонними сервисами, в том числе платежными системами, средствами связи и другими поставщиками услуг, хранится и обрабатывается указанными лицами (Операторами) в соответствии с их Пользовательским соглашением и Политикой конфиденциальности. Субъект персональных данных и/или Пользователь обязан самостоятельно своевременно ознакомиться с указанными документами. Оператор не несет ответственность за действия третьих лиц, в том числе указанных в настоящем пункте поставщиков услуг.</p>
+        <p>10.6. Оператор при обработке персональных данных обеспечивает конфиденциальность персональных данных.</p>
+        <p>10.7. Оператор осуществляет хранение персональных данных в форме, позволяющей определить субъекта персональных данных, не дольше, чем этого требуют цели обработки персональных данных, если срок хранения персональных данных не установлен федеральным законом, договором, стороной которого, выгодоприобретателем или поручителем по которому является субъект персональных данных.</p>
+        <p>10.8. Условием прекращения обработки персональных данных может являться достижение целей обработки персональных данных, истечение срока действия согласия субъекта персональных данных или отзыв согласия субъектом персональных данных, а также выявление неправомерной обработки персональных данных.</p>
+        <h4>11. Перечень действий, производимых Оператором с полученными персональными данными</h4>
+        <p>11.1. Оператор осуществляет сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление и уничтожение персональных данных.</p>
+        <p>11.2. Оператор осуществляет автоматизированную обработку персональных данных с получением и/или передачей полученной информации по информационно-телекоммуникационным сетям или без таковой.</p>
+        <h4>12. Трансграничная передача персональных данных</h4>
+        <p>12.1. Оператор до начала осуществления трансграничной передачи персональных данных обязан убедиться в том, что иностранным государством, на территорию которого предполагается осуществлять передачу персональных данных, обеспечивается надежная защита прав субъектов персональных данных.</p>
+        <p>12.2. Трансграничная передача персональных данных на территории иностранных государств, не отвечающих вышеуказанным требованиям, может осуществляться только в случае наличия согласия в письменной форме субъекта персональных данных на трансграничную передачу его персональных данных и/или исполнения договора, стороной которого является субъект персональных данных.</p>
+        <h4>13. Конфиденциальность персональных данных</h4>
+        <p>Оператор и иные лица, получившие доступ к персональным данным, обязаны не раскрывать третьим лицам и не распространять персональные данные без согласия субъекта персональных данных, если иное не предусмотрено федеральным законом.</p>
+        <h4>14. Заключительные положения</h4>
+        <p>14.1. Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору с помощью электронной почты 89288520222@mail.ru</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="modal reader doc" id="doc-agree" role="dialog" aria-modal="true" aria-labelledby="doc-agree-t" aria-hidden="true">
+    <div class="box frame">
+      <button class="x doc-close" type="button" aria-label="Закрыть документ"></button>
+      <article class="art legaltext">
+        <div class="src">Документ</div>
+        <h3 id="doc-agree-t">Согласие на обработку персональных данных</h3>
+        
+        <p>Настоящим в соответствии с требованиями Федерального закона РФ от 27.07.2006. №152-ФЗ «О персональных данных» свободно, своей волей и в своем интересе подтверждаю, что заполнение соответствующих электронных форм и/или направление своих персональных данных самозанятой гражданке (плательщика налога на профессиональный доход) Васильевой Олеси Анверовне (ИНН 390406455935)) (далее – «Оператор») любым другим способом означает выражение моего согласия на обработку моих персональных данных Оператором.</p>
+        <p>Я проинформирован(а), что под обработкой персональных данных понимается любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (предоставление, доступ), блокирование, удаление, уничтожение персональных данных.</p>
+        <p>Настоящее согласие дается мною на обработку следующих персональных данных:</p>
+        <p class="li">Фамилия, имя, отчество; Дата рождения;</p>
+        <p class="li">Номер телефона;</p>
+        <p class="li">Реквизиты банковских карт, номер расчетного счета, номере лицевого счета;</p>
+        <p class="li">Сведения личного характера;</p>
+        <p class="li">Адрес электронной почты.</p>
+        <p>Цели обработки персональных данных:</p>
+        <p class="li">осуществление информационного и (или) организационного взаимодействия со всеми субъектами персональных данных (включая информационное обеспечение, направление информационных сообщений, обработку поступающих обращений и информационных материалов любого характера и подготовку ответа на них, предоставление эффективной поддержки при возникновении у заинтересованных лиц различных проблем или ситуаций), а также управление качеством и эффективностью такого взаимодействия (обслуживания);</p>
+        <p class="li">подготовка, заключение и исполнение договора на оказание услуг.</p>
+        <p>Подтверждаю, что ознакомлен(а) с положениями Федерального закона РФ от 27.07.2006. №152-ФЗ «О персональных данных», Политикой обработки персональных данных Оператора, права и обязанности в области защиты персональных данных мне понятны.</p>
+        <p>Заполняя соответствующую форму/формы, направляемые Оператором и/или, отправляя свои персональные данные Оператору, выражаю безоговорочное согласие со всеми условиями Политики обработки персональных данных Оператора и указанными в ней условиями обработки персональных данных.</p>
+        <p>Я осведомлен(а), что в случае несогласия с условиями Политики обработки персональных данных Оператора я должен/должна воздержаться от передачи персональной информации Оператору, в том числе не осуществлять заполнение полей ввода на формах, направляемых Оператором.</p>
+        <p>Срок, в течение которого действует Согласие, составляет 3 года или до даты направления отзыва согласия на обработку персональных данных.</p>
+        <p>Я осведомлен(а), что имею право в любой момент отозвать согласие на обработку персональных данных, направив Оператору соответствующее письмо по адресу электронной почты 89288520222@mail.ru , с пометкой «Отзыв согласия на обработку персональных данных».</p>
+        <p>В указанном случае Оператор прекращает обработку и уничтожает персональные данные в срок, не превышающий 10 (десяти) календарных дней с даты получения соответствующего отзыва.</p>
+        <p>Я осознаю, что в случае отзыва Согласия на обработку персональных данных я не смогу пользоваться услугами, которые оказывает Оператор.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="modal reader doc" id="doc-oferta" role="dialog" aria-modal="true" aria-labelledby="doc-oferta-t" aria-hidden="true">
+    <div class="box frame">
+      <button class="x doc-close" type="button" aria-label="Закрыть документ"></button>
+      <article class="art legaltext">
+        <div class="src">Документ</div>
+        <h3 id="doc-oferta-t">Публичная оферта</h3>
+        <p class="lede">на оказание информационно-консультационных услуг и продажу цифровых товаров</p>
+        <p>г. Сочи</p>
+        <h4>1. ОБЩИЕ ПОЛОЖЕНИЯ</h4>
+        <p>1.1. Настоящий публичный договор (далее – Оферта) представляет собой предложение самозанятой гражданки (плательщика налога на профессиональный доход) Васильевой Олеси Анверовны (ИНН 390406455935) (далее – Исполнитель), адресованное любому заинтересованному физическому лицу (далее – «Заказчик»), и содержит все существенные условия договора на оказание услуг и продажу цифровых товаров.</p>
+        <p>Настоящий документ является публичной офертой в соответствии с пунктом 2 статьи 437 Гражданского Кодекса Российской Федерации.</p>
+        <p>1.2. Лицо, осуществившее акцепт настоящей публичной Оферты, приобретает все права и обязанности Заказчика, предусмотренные настоящим Договором.</p>
+        <p>1.3. Надлежащим акцептом настоящей Оферты в соответствии со статьей 438 Гражданского кодекса Российской Федерации считается осуществление Заказчиком в совокупности всех нижеперечисленных действий:</p>
+        <p class="li">ознакомление Заказчика с условиями Оферты;</p>
+        <p class="li">выбор услуги или цифрового товара на Сайте Исполнителя;</p>
+        <p class="li">совершение 100% предоплаты Услуг или Цифрового товара через интегрированный на Сайте платежный сервис (или иным согласованным с Исполнителем способом).</p>
+        <p>С момента поступления денежных средств в счет оплаты услуг или цифрового товара на счет Исполнителя, настоящий Договор считается заключенным между Заказчиком и Исполнителем.</p>
+        <p class="li">предоставление согласия на обработку Исполнителем персональных данных Заказчика.</p>
+        <p>Акцепт Оферты является подтверждением того, что все и любые условия Оферты принимаются Заказчиком целиком и полностью без каких-либо оговорок и ограничений. Заказчик подтверждает, что ему понятны все условия оказания Услуг, продажи товаров и условия Оферты, а также то, что условия полностью соответствуют воле, потребностям и требованиям Заказчика.</p>
+        <p>1.4. Принятие настоящей Оферты означает, что Заказчик в необходимой для него степени самостоятельно ознакомился с условиями настоящего Договора и правилами платежного сервиса, спецификой функционирования сайта, мессенджеров и признает их безусловную пригодность для совершения действий и достижения целей, являющихся предметом настоящего Договора.</p>
+        <p>1.5. Осуществляя акцепт настоящей Оферты, Заказчик подтверждает, что оказание Исполнителем услуг по настоящему договору производиться очно, по согласованному Исполнителем графику, дистанционно с использованием программного обеспечения (далее – ПО) полностью соответствует возможности Заказчика пользоваться услугами, оказываемыми таким способом.</p>
+        <h4>2. ПРЕДМЕТ</h4>
+        <p>2.1. Исполнитель обязуется оказать Заказчику психологические консультационно-информационные услуги (услуги по индивидуальному или групповому психологическому консультированию по запросу Заказчика), а также предоставить Цифровые товары (электронные книги, гайды, чек-листы, методические материалы и иные авторские материалы в электронном виде), а Заказчик обязуется принять и оплатить их в порядке и на условиях, предусмотренных настоящей Офертой.</p>
+        <p>2.2. Услуги оказываются в форме индивидуальных или групповых мероприятий (в том числе психологических консультаций, тренингов, практикумов), проводимых Исполнителем очно и/или дистанционно (посредством онлайн-трансляции, видеосвязи с использованием платформ Zoom, Яндекс-Телемост, Google Meet, мессенджеров или иных интернет-сервисов по согласованию Сторон).</p>
+        <p class="sub">2.3. В рамках Услуг Исполнитель предоставляет:</p>
+        <p>2.3.1. Психологические услуги – индивидуальное психологическое консультирование, диагностика, а также иные немедицинские услуги.</p>
+        <p>2.3.2. Психологическая группа - предоставление услуги доступа к очно/онлайн-группе с целью получения психологической помощи и поддержки участников. Исполнитель самостоятельно определяет характеристики авторского проекта – темы, содержание и методику оказания платной услуги психологической группы.</p>
+        <p>2.3.3. Продажа Цифрового товара – предоставление Заказчику за плату доступа к скачиванию или отправка файлов (электронных книг, гайдов, чек-листов, методических материалов и иных авторских материалов) Исполнителя в электронном формате (PDF, EPUB или аналогичном).</p>
+        <p>2.4. Услуги, оказываемые по настоящему Договору, не являются медицинской помощью, психотерапией в медицинском понимании, не направлены на диагностику, лечение заболеваний или назначении медикаментозной терапии. Исполнитель осуществляет деятельность в рамках психологического консультирования, не требующего медицинской лицензии в соответствии с законодательством РФ.</p>
+        <p>2.5. Актуальный перечень, стоимость и детальное описание предоставляемых Услуг и цифровых товаров публикуется Исполнителем на сайте, настоящей Оферте, а также в официальных аккаунтах и сообществах Исполнителя в социальных сетях.</p>
+        <h4>3. ЭТИЧЕСКИЕ ПРИНЦИПЫ И ГРАНИЦЫ КОМПЕТЕНЦИИ</h4>
+        <p>3.1. Исполнитель соблюдает этические принципы психологического консультирования: доброжелательность, уважение к клиенту, конфиденциальность, профессиональная компетентность, отказ от причинения вреда.</p>
+        <p>3.2. В случае наличия у Заказчика психических расстройств, заболеваний, требующих медицинского наблюдения и лечения, Заказчик обязан обратиться к соответствующим медицинским специалистам. Исполнитель не несёт ответственности за последствия отказа Заказчика от обращения за медицинской помощью.</p>
+        <p>3.3. Заказчик обязуется до начала оказания услуг проинформировать Исполнителя о наличии установленных медицинских (в том числе психиатрических) диагнозов, приёме медикаментов, влияющих на психическое состояние, а также об иных обстоятельствах, которые могут повлиять на оказание услуг.</p>
+        <p>3.4. Исполнитель оставляет за собой право отказать в оказании услуг или рекомендовать Заказчику обратиться к профильному медицинскому специалисту, если по результатам первичного общения или в процессе оказания услуг будет установлено, что состояние Заказчика требует медицинской помощи.</p>
+        <p>3.5. Исполнитель не даёт гарантий достижения какого-либо конкретного результата, так как результат зависит от многих факторов, включая личные усилия Заказчика, его готовность к изменениям и соблюдение рекомендаций. Услуга не является медицинской, не заменяет психиатрическое или психотерапевтическое лечение.</p>
+        <p>3.6. Исполнитель оставляет за собой право прервать консультирование и рекомендовать обращение к врачу-психиатру или психотерапевту при выявлении признаков психического расстройства и расстройства поведения, суицидальных мыслей, психотических состояний, зависимости; к другому врачу при обнаружении соматических, хронических заболеваний (заболевания сердца и сосудов, заболевания верхних дыхательных путей, заболевания нервной системы и прочие), а также если запрос Клиента выходит за пределы профессиональной компетенции Исполнителя.</p>
+        <p>3.7. Любая аудио - или видеозапись сессий возможна только с двустороннего согласия. Исполнитель может вести письменные заметки в процессе консультации без дополнительного согласия. Если Клиент хочет записать сессию, он обязан согласовать этот вопрос с Исполнителем об этом Исполнителя до её начала.</p>
+        <h4>4. СРОК, СТОИМОСТЬ И ПОРЯДОК ОПЛАТЫ УСЛУГ:</h4>
+        <p>4.1. Срок оказания Услуг определяется в соответствии с выбранным Заказчиком тарифом, программой или индивидуальным графиком, согласованным Сторонами. Даты и время проведения конкретных сессий фиксируются при записи.</p>
+        <p>4.2. Началом срока оказания Услуг считается дата первой очной или онлайн-встречи – для индивидуальных или групповых сессий.</p>
+        <p>4.3. Услуги считаются оказанными Исполнителем надлежащим образом и в полном объеме, а Заказчик считается принявшим их без подписания отдельного акта, в следующих случаях:</p>
+        <p class="li">Для онлайн-сессий фактом оказания услуги является проведение сессии в согласованное время. Услуга считается оказанной надлежащим образом, если Заказчик не вышел на связь более чем через 15 минут после согласованного времени (неявка Заказчика).</p>
+        <p class="li">Для очных услуг фактом оказания услуги является окончание согласованного времени, отведённого на проведение сессии.</p>
+        <p>4.4. Моментом исполнения обязательств по предоставлению Цифрового товара (электронных книг, гайдов, чек-листов, методических материалов и иных авторских материалов в электронном виде) считается автоматическое предоставление Заказчику ссылки на скачивание файлов на Сайте после оплаты либо отправка файла/ссылки на цифровые товары или в мессенджер Заказчика. С этого момента Цифровой товар считается переданным Заказчику в полном объеме.</p>
+        <p>4.5. Информация об актуальной стоимости услуг, тарифах, пакетах и цифровых товарах размещается на Сайте Исполнителя.</p>
+        <p>4.6. Оплата Услуг и Цифровых товаров производится в форме 100% предоплаты через интегрированный на Сайте платежный сервис. При покупке разовых сессий по согласованию сторон оплата может быть произведена путем перевода по Системе Быстрых Платежей (СБП) по номеру телефона для расчетов +7 (928) 854 54 95 или на банковский счет Исполнителя в ПАО Сбербанк.</p>
+        <p>4.7. Исполнитель является налогоплательщиком налога на профессиональный доход (самозанятым). После проведения платежа Исполнитель (либо платежный сервис в автоматическом режиме) обязуется предоставить Заказчику чек, сформированный в приложении «Мой налог», в электронной форме.</p>
+        <p class="sub">4.8. Стоимость сессий и товаров на Сайте:</p>
+        <p>4.8.1. Индивидуальное консультирование (очно или онлайн): 60 минут – 5 000 руб.</p>
+        <p>4.8.2. Абонемент 5+1 (6) консультаций – 25 000 рублей.</p>
+        <p>4.8.3. Абонемент 10 консультаций – 35 000 рублей.</p>
+        <p>4.8.4. Стоимость Цифрового товара указывается непосредственно на Сайте на странице продажи товара.</p>
+        <p>4.8.5. Сессия-знакомство (онлайн или очно): 20 минут – бесплатно (0 руб.). Проводится однократно для знакомства, обсуждения запроса и формата работы; не является психологической консультацией и не требует оплаты.</p>
+        <p>4.9. Срок действия абонементов (пакетов консультаций) составляет 3 (три) месяца с момента оплаты. Если в течение указанного срока Заказчик не обратился за получением услуг, обязательства Исполнителя по проведению сессий в рамках данного абонемента прекращаются.</p>
+        <p>4.10. Исполнитель вправе изменять стоимость услуг и цифровых товаров в одностороннем порядке путём размещения актуальной информации на Сайте. Изменение стоимости не распространяется на уже оплаченные услуги и товары.</p>
+        <p class="sub">4.11. Порядок обращения платных Подарочных сертификатов:</p>
+        <p>4.11.1. Платный Подарочный сертификат является подтверждением внесения авансового платежа за услуги Исполнителя в пользу Держателя сертификата. Срок действия составляет 6 (шесть) месяцев со дня оплаты. Право требования возврата денежных средств за неиспользованный сертификат обладает исключительно Покупатель сертификата (лицо, совершившее платеж). При возврате средств за частично использованный пакет сессий по сертификату, стоимость уже проведенных сессий рассчитывается по полной стоимости разовой консультации (5 000 руб.).</p>
+        <p>4.11.2. Бесплатные (рекламные/бонусные) Подарочные сертификаты:</p>
+        <p class="li">Бесплатный Подарочный сертификат (выпущенный в рамках рекламных кампаний, маркетинговых акций, через партнеров-распространителей или подаренный Исполнителем лично) является безвозмездным предложением Исполнителя и не подтверждает внесение аванса.</p>
+        <p class="li">Срок действия бесплатного сертификата указывается непосредственно на бланке сертификата (в электронном или печатном виде) или в условиях рекламной акции. По истечении указанного срока сертификат аннулируется, услуги по нему не оказываются.</p>
+        <p class="li">Бесплатный Подарочный сертификат не подлежит обмену на денежные средства, не подлежит возврату и не имеет денежного эквивалента.</p>
+        <p>В случае отказа Держателя от использования бесплатного сертификата или в случае пропуска срока его действия, никакие компенсации (денежные или материальные) Держателю или третьим лицам Исполнителем не выплачиваются.</p>
+        <h4>5. ПРАВА И ОБЯЗАННОСТИ СТОРОН</h4>
+        <p class="sub">5.1. Исполнитель обязуется:</p>
+        <p>5.1.1. Согласовать с Заказчиком условия Услуги (дату, время, продолжительность для консультаций по записи).</p>
+        <p>5.1.2. Обеспечивать строгое соблюдение конфиденциальности информации, полученной от Заказчика, за исключением случаев, прямо предусмотренных законом РФ.</p>
+        <p>5.1.3. Соблюдать требования законодательства РФ (ФЗ № 152 «О персональных данных»), касающиеся обработки, передачи и защиты персональных данных Заказчика.</p>
+        <p class="sub">5.2. Исполнитель вправе:</p>
+        <p>5.2.1. Самостоятельно определять формы, методы и содержание оказываемых услуг и авторских материалов.</p>
+        <p>5.2.2. Приостановить оказание услуг или отказаться от их оказания в одностороннем порядке в случае нарушения Заказчиком сроков оплаты, проявления агрессии, нахождения в состоянии опьянения или иного неуважительного поведения.</p>
+        <p>5.2.3. Перенести дату и время проведения сессии, предупредив Заказчика в разумный срок в мессенджере или по электронной почте, с предоставлением альтернативного времени.</p>
+        <p>5.2.4. Использовать отзывы Заказчика исключительно в обезличенном виде (без указания фамилии, имени, отчества, например: «Клиент А.») для маркетинговых, образовательных и портфолио-целей.</p>
+        <p class="sub">5.3. Заказчик вправе:</p>
+        <p>5.3.1. Требовать надлежащего и своевременного оказания Услуг или предоставления оплаченного Цифрового товара Исполнителем.</p>
+        <p class="sub">5.4. Заказчик обязан:</p>
+        <p>5.4.1. Своевременно и в полном объёме оплачивать услуги и товары Исполнителя.</p>
+        <p>5.4.2. При записи предоставлять достоверную информацию о состоянии своего здоровья.</p>
+        <p>5.4.3. Не осуществлять аудио- или видеозапись встреч без предварительного согласия Исполнителя. Не копировать, не распространять и не перепродавать третьим лицам материалы, книги, тесты и методики, полученные от Исполнителя, и использовать их строго для личного некоммерческого пользования.</p>
+        <p>5.4.4. Самостоятельно следить за временем начала консультаций. При опоздании Заказчика время консультации не продлевается. При опоздании более чем на 15 минут Услуга считается оказанной в полном объеме, а стоимость сессии удерживается в размере 100%.</p>
+        <h4>6. ОТВЕТСТВЕННОСТЬ СТОРОН</h4>
+        <p>6.1. Стороны несут ответственность за неисполнение или ненадлежащее исполнение обязательств по настоящему Договору в соответствии с условиями Договора и действующим законодательством РФ.</p>
+        <p class="sub">6.2. Исполнитель не несёт ответственности:</p>
+        <p class="li">за результаты применения Заказчиком информации, полученной в ходе консультации;</p>
+        <p class="li">за принятые Заказчиком решения и их последствия;</p>
+        <p class="li">за недостижение Заказчиком желаемого результата, если услуги были оказаны надлежащим образом;</p>
+        <p class="li">за невозможность оказания услуг по причинам, зависящим от Заказчика (отсутствие связи, неявка, предоставление недостоверных контактных данных и т.п.);</p>
+        <p class="li">за состояние здоровья Заказчика и последствия отказа Заказчика от обращения за медицинской помощью.</p>
+        <p>6.3. Заказчик несёт ответственность за достоверность предоставленных персональных данных и информации о состоянии здоровья.</p>
+        <p>6.4. Заказчик полностью осознает, что эффективность услуг и их результат зависимы от прилагаемых Заказчиком самостоятельных усилий по преодолению собственных психологических проблем, от степени психологического сотрудничества и вовлеченности самого Заказчика в процесс оказания услуг.</p>
+        <p>6.5. Исполнитель не несет ответственности за невозможность оказания Услуг Заказчику по причинам, не зависящим от Исполнителя, в частности: нарушение работы Интернета, оборудования или ПО со стороны Заказчика.</p>
+        <p>6.6. Исполнителем не гарантируется абсолютная бесперебойность предоставления Услуг по настоящему Договору. Несмотря на то, что Исполнитель будет предпринимать все возможные меры с целью недопущения вышеперечисленного, в случае неудовлетворительного качества интернет-соединения и нестабильной работы ПО на стороне Исполнителя, получение Услуг по настоящему Договору может быть перенесено на более поздний срок.</p>
+        <p>6.7. Исполнитель не несет ответственности за несоответствие предоставленной Услуги ожиданиям Заказчика и/или за его субъективную оценку, такое несоответствие ожиданиям и/ или отрицательная субъективная оценка не являются основаниями считать услуги оказанными некачественно, или не в согласованном объеме.</p>
+        <p>6.8. Исполнитель имеет право отказаться от исполнения обязательств по Договору в одностороннем внесудебном порядке с возвратом Заказчику денежных средств за вычетом стоимости фактически оказанных услуг и понесённых расходов в случаях:</p>
+        <p class="li">выявления недостоверности предоставленных Заказчиком данных;</p>
+        <p class="li">невозможности связаться с Заказчиком по предоставленным контактным данным в течение трёх календарных дней;</p>
+        <p class="li">некорректного поведения Заказчика (оскорбления, угрозы, агрессия, нахождение в состоянии алкогольного или наркотического опьянения и т.п.);</p>
+        <p class="li">нарушения Заказчиком условий настоящего Договора или Правил консультаций;</p>
+        <p class="li">систематического (более одного раза) неявки Заказчика на согласованную консультацию без предварительного уведомления Исполнителя.</p>
+        <p>6.9. Стороны освобождаются от ответственности за неисполнение или ненадлежащее исполнение обязательств по настоящему Договору на время действия обстоятельств непреодолимой силы. В течение этого времени стороны не имеют взаимных претензий, и каждая из сторон принимает на себя свой риск последствия обстоятельств непреодолимой силы.</p>
+        <h4>7. ПОРЯДОК ВОЗВРАТА ДЕНЕЖНЫХ СРЕДСТВ</h4>
+        <p>7.1. Покупатель имеет право в любой момент отказаться от исполнения договора на оказание психологических услуг (консультаций) на основании ст. 32 Закона РФ «О защите прав потребителей» и ст. 782 ГК РФ, возместив Исполнителю фактически понесенные им расходы.</p>
+        <p>7.2. Перенос или отмена запланированной сессии Заказчиком могут быть осуществлены не позднее чем за 24 (двадцать четыре) часа до назначенного времени. Если Заказчик отменяет или переносит консультацию менее чем за 24 часа до её начала, сессия считается пропущенной по вине Заказчика, удерживается Исполнителем в размере 100% её стоимости и возврату не подлежит.</p>
+        <p>7.3. При досрочном расторжении договора по инициативе Заказчика и возврате денежных средств за неиспользованные сессии из купленного абонемента (пакета услуг), расчет стоимости уже проведенных сессий производится Исполнителем без учета скидки по пакету — по стоимости разовой индивидуальной консультации, зафиксированной в п. 4.8.1 Оферты (5 000 руб. за сессию). Оставшаяся часть аванса возвращается Заказчику.</p>
+        <p>7.4. На основании ст. 26.1 Закона РФ «О защите прав потребителей» и п. 14 Перечня непродовольственных товаров надлежащего качества, не подлежащих возврату или обмену (Постановление Правительства РФ № 2463), возврат денежных средств за Цифровой товар надлежащего качества (электронные книги, гайды, чек-листы, методические материалы и иные авторские материалы в электронном виде) после предоставления к нему доступа, скачивания или отправки файла на электронную почту/мессенджер Заказчика не производится.</p>
+        <p>7.5. Из суммы возврата за неиспользованные консультации вычитаются фактически понесенные расходы Исполнителя, к которым относятся банковские комиссии платежных сервисов за прием платежа и осуществление возврата.</p>
+        <p>7.6. Возврат денежных средств осуществляется Исполнителем на основании письменного заявления Заказчика, направленного на электронную почту 89288520222@mail.ru, в течение 10 (десяти) рабочих дней с даты получения заявления, исключительно по тем же банковским реквизитам, с которых была произведена оплата.</p>
+        <h4>8. СРОК ДЕЙСТВИЯ И ИЗМЕНЕНИЕ ОФЕРТЫ</h4>
+        <p>8.1. Настоящая оферта вступает в силу с момента её размещения на Сайте Исполнителя и действует до момента её отзыва Исполнителем.</p>
+        <p>8.2. Исполнитель вправе в любое время по своему усмотрению вносить изменения в условия оферты, Политику конфиденциальности и Правила консультаций. Изменения вступают в силу с момента размещения новой редакции документа на Сайте Исполнителя, если иной срок не указан дополнительно.</p>
+        <p>8.3. Заказчик обязан самостоятельно отслеживать изменения указанных документов. Размещение изменений на Сайте Исполнителя является надлежащим уведомлением Заказчика.</p>
+        <p>8.4. Изменения оферты распространяются на Договоры, заключённые после вступления изменений в силу. Для действующих Договоров изменения применяются, если Заказчик продолжает пользоваться услугами после вступления изменений в силу.</p>
+        <h4>9. ПРОЧИЕ УСЛОВИЯ</h4>
+        <p>9.1. Настоящий Договор вступает в силу с момента акцепта Заказчика в соответствии с п. 1.3. Договора и действует до полного исполнения обязательств сторонами.</p>
+        <p>9.2. Стороны признают юридическую силу переписки по электронной почте и в мессенджерах (MAX,VK, Telegram, email и др.) и приравнивают её к документам, подписанным простой электронной подписью.</p>
+        <p>9.3. Уведомления, заявления, претензии и иные юридически значимые сообщения направляются Сторонами по контактным данным, указанным в реквизитах Исполнителя и предоставленным Заказчиком.</p>
+        <p>9.4. Признание судом недействительным какого-либо положения настоящего Договора не влечёт недействительности остальных его положений.</p>
+        <p>9.5. Во всём, что не предусмотрено настоящим Договором, Стороны руководствуются действующим законодательством РФ.</p>
+        <h4>10. РЕКВИЗИТЫ ИСПОЛНИТЕЛЯ</h4>
+        <p>Гр.РФ Васильева Олеся Анверовна</p>
+        <p>ИНН 390406455935</p>
+        <p>Тел. для связи: 8 928 852 02 22</p>
+        <p>Тел. для расчетов: 8 928 854 54 95</p>
+        <p>Email: 89288520222@mail.ru</p>
+        <p>Официальный сайт: https://psy-olesiavasileva.ru</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="modal reader" id="reader" role="dialog" aria-modal="true" aria-labelledby="artTitle" aria-hidden="true">
+    <div class="box frame">
+      <button class="x" type="button" id="rClose" aria-label="Закрыть статью"></button>
+      <article class="art">
+        <div class="src">Статья · 2022</div>
+        <h3 id="artTitle">Прокрастинация</h3>
+        <p class="lede">Как совместить обучение, работу и повседневные дела?</p>
+        <p>Часто «не хватает времени» — это совсем не про время.</p>
+        <div class="tip"><b>Чтобы успеть все важные дела, начните с планирования.</b><p>Это позволит избежать хаоса в мыслях о том, что ещё нужно успеть, и ощущения неизбежной нехватки времени. Не бойтесь строить планы, а потом их не выполнить. В любом случае лучше сделать намеченное наполовину, чем не сделать вообще.</p></div>
+        <div class="tip"><b>Делайте записи в блокнотах или планировщиках дел.</b><p>Расписывайте, что конкретно вам сегодня нужно выполнить, сколько времени вы на это отводите, и чётко следуйте намеченному плану.</p></div>
+        <div class="tip"><b>Учитывайте временные промежутки.</b><p>15–30 минут — это тоже время. Даже если вы не успеваете всё завершить, их использование приближает ваши задачи к финалу, а каждая выполненная задача — это очередная ступенька на пути к вашим целям.</p></div>
+        <div class="tip"><b>Не планируйте слишком много дел — задачи должны быть выполнимыми.</b><p>Примите тот факт, что вы не обязаны успевать всё. Цените себя и свой ресурс.</p></div>
+        <div class="tip"><b>Объёмные задачи, например прослушивание лекций, разбивайте на этапы.</b><p>Можно попробовать встроить их в повседневную жизнь. Учитывайте, что не каждый способен выполнять несколько дел одновременно, но попробовать стоит. Готовите ужин, занимаетесь уборкой, тренируетесь в спортзале, едете на работу или с работы — наушники в помощь.</p></div>
+        <h4>Техники тайм-менеджмента</h4>
+        <div class="tech">
+          <div><b>Матрица Эйзенхауэра</b><p>Помогает распределить дела по степени важности. Большинство людей выбирают срочные, а не важные дела. Благодаря этой технике можно заметить, действительно ли вы заняты нужным для вас делом.</p></div>
+          <div><b>Техника временных блоков</b><p>Суть в том, чтобы заранее выделять время на каждое дело и в это время не заниматься ничем, кроме запланированного.</p></div>
+          <div><b>Система 25 минут</b><p>Задачи разбиваются на небольшие части, и после каждой вы получаете заслуженный отдых. Так легче взяться за дело и выполнить его лучше.</p></div>
+        </div>
+        <p>Не нужно глобально менять привычный уклад жизни. Это только приведёт к разочарованию и утвердит во мнении, что ничего не работает. Перемены начинаются с маленьких шагов.</p>
+        <p class="final">Помните, что цель, мотивация и самоконтроль — главное в собственной эффективности.</p>
+        <a class="btn-line" href="#book" id="artBook" style="align-self:flex-start;margin-top:8px">Записаться на консультацию</a>
+      </article>
+    </div>
+  </div>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" aria-hidden="true">
+    <div class="box frame">
+      <button class="x" type="button" id="mClose" aria-label="Закрыть"></button>
+      <div class="seal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#E3C98F" stroke-width="1.2"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+      <div class="orn" aria-hidden="true"><i></i></div>
+      <h3 id="mTitle">Заявка успешно отправлена!</h3>
+      <p>Спасибо, я свяжусь с вами в ближайшее время.</p>
+      <button class="btn-gold" type="button" id="mOk" style="min-height:52px;padding:0 34px">Хорошо</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var form=document.getElementById('form'),
+      select=document.getElementById('fService')||{value:''};
+
+  var reduceMotion=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var scrollAnim=null;
+  function ease(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2}
+  function smoothTo(el){
+    var start=window.pageYOffset,
+        end=Math.max(0,el.getBoundingClientRect().top+start-16),
+        dist=end-start;
+    if(reduceMotion||Math.abs(dist)<2){window.scrollTo(0,end);return}
+    var dur=Math.min(1600,Math.max(700,Math.abs(dist)*0.45)),t0=null;
+    if(scrollAnim)cancelAnimationFrame(scrollAnim);
+    function step(ts){
+      if(!t0)t0=ts;
+      var p=Math.min(1,(ts-t0)/dur);
+      window.scrollTo(0,start+dist*ease(p));
+      if(p<1)scrollAnim=requestAnimationFrame(step);else scrollAnim=null;
+    }
+    scrollAnim=requestAnimationFrame(step);
+  }
+  /* Плавный скролл для всех якорных ссылок сайта */
+  document.addEventListener('click',function(e){
+    if(e.defaultPrevented)return;
+    var a=e.target.closest&&e.target.closest('#ov a[href^="#"]');
+    if(!a)return;
+    var id=a.getAttribute('href').slice(1),t=id&&document.getElementById(id);
+    if(!t)return;
+    e.preventDefault();smoothTo(t);
+  });
+  /* Проявление блоков из темноты сверху вниз */
+  (function(){
+    var root=document.getElementById('ov');
+    if(reduceMotion||!('IntersectionObserver' in window))return;
+    var els=root.querySelectorAll('section:not(.hero) .head, .subhead, .edu, .acc, .price, .rev blockquote, .pubs, .book .txt, #form, footer .w');
+    root.classList.add('rv-on');
+    els.forEach(function(el){
+      var sib=Array.prototype.filter.call(el.parentElement.children,function(c){return c.matches('.edu,.price,blockquote')});
+      var i=sib.indexOf(el);
+      el.style.setProperty('--d',(i>0?i*0.14:0)+'s');
+      el.classList.add('rv');
+    });
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting)return;
+        var el=en.target;io.unobserve(el);
+        el.classList.add('in');
+        var d=parseFloat(el.style.getPropertyValue('--d'))||0;
+        setTimeout(function(){el.classList.remove('rv','in');el.style.removeProperty('--d')},1500+d*1000);
+      });
+    },{threshold:0.12,rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(el){io.observe(el)});
+  })();
+
+  /* ---------- Аккордеон ---------- */
+  var items=document.querySelectorAll('#acc .item');
+  items.forEach(function(it){
+    it.querySelector('.qh').addEventListener('click',function(){
+      var willOpen=!it.classList.contains('open');
+      items.forEach(function(o){o.classList.remove('open');o.querySelector('.qh').setAttribute('aria-expanded','false')});
+      if(willOpen){it.classList.add('open');this.setAttribute('aria-expanded','true')}
+    });
+  });
+
+  /* ---------- Кнопки «Записаться» / «Выбрать пакет» ---------- */
+  /* ===== ССЫЛКИ НА ОПЛАТУ PRODAMUS =====
+     Вставьте ссылки между кавычек. Пока ссылка пустая, кнопка ведёт к форме записи. */
+  var PAY_LINKS={
+    single:   '',   // Сессия 60 мин · 5 000 ₽
+    optimal:  '',   // Пакет «Оптимальный» 5+1 · 25 000 ₽
+    extended: ''    // Пакет «Расширенный» 10 сессий · 35 000 ₽
+  };
+  document.querySelectorAll('.js-book').forEach(function(b){
+    var key=b.getAttribute('data-service'),pay=key&&PAY_LINKS[key];
+    if(pay){b.setAttribute('href',pay);b.setAttribute('target','_blank');b.setAttribute('rel','noopener');b.classList.remove('js-book');return}
+    b.addEventListener('click',function(e){
+      e.preventDefault();
+      var s=b.getAttribute('data-service');
+      if(s) select.value=s;
+      smoothTo(document.getElementById('book'));
+      form.classList.remove('flash');void form.offsetWidth;form.classList.add('flash');
+      setTimeout(function(){var f=document.getElementById('fAgree');if(f)f.focus({preventScroll:true})},700);
+    });
+  });
+
+  /* ---------- Тест: Шкала тревоги Бека ---------- */
+  var Q=['Ощущение онемения или покалывания в теле','Ощущение жара','Дрожь в ногах','Неспособность расслабиться','Страх, что произойдёт самое плохое','Головокружение или ощущение лёгкости в голове','Ускоренное сердцебиение','Неустойчивость','Ощущение ужаса','Нервозность','Ощущение удушья','Дрожь в руках','Шаткость походки','Страх утраты контроля','Затруднённое дыхание','Страх смерти','Испуг','Неприятные ощущения в желудке','Ощущение предобморочного состояния','Приливы крови к лицу','Усиленная потливость, не связанная с жарой'];
+  var OPT=['Совсем не беспокоило','Слегка, не слишком беспокоило','Умеренно: неприятно, но можно было терпеть','Очень сильно: с трудом могла (мог) это выносить'];
+  var ans=new Array(Q.length).fill(null), cur=-1, busy=false;
+  var stage=document.getElementById('stage'),fill=document.getElementById('barFill'),bar=document.getElementById('bar'),mL=document.getElementById('metaL'),mR=document.getElementById('metaR');
+
+  function progress(){
+    var done=ans.filter(function(a){return a!==null}).length;
+    fill.style.width=(done/Q.length*100)+'%';
+    bar.setAttribute('aria-valuenow',done);
+    mR.textContent=done+' / '+Q.length;
+  }
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+
+  function intro(){
+    cur=-1;mL.textContent='Начало';progress();
+    stage.innerHTML='<div class="fade" style="display:flex;flex-direction:column;gap:28px">'+
+      '<h3>Насколько вас беспокоила тревога в последнее время?</h3>'+
+      '<p class="hint">Перед вами 21 ощущение. Отметьте, насколько сильно каждое из них беспокоило вас <span style="color:var(--gold-hi)">за последнюю неделю, включая сегодняшний день</span>. Отвечайте не задумываясь долго: первая реакция обычно самая точная.</p>'+
+      '<div><button class="btn-gold" type="button" id="start">Начать тест</button></div></div>';
+    document.getElementById('start').onclick=function(){show(0)};
+  }
+
+  function show(i){
+    cur=i;busy=false;mL.textContent='Вопрос '+(i+1);progress();
+    var h='<div class="fade" style="display:flex;flex-direction:column;gap:28px">'+
+      '<h3>'+esc(Q[i])+'</h3><div class="opts" role="radiogroup" aria-label="'+esc(Q[i])+'">';
+    OPT.forEach(function(o,k){
+      var on=ans[i]===k;
+      h+='<button type="button" role="radio" aria-checked="'+on+'" class="opt'+(on?' on':'')+'" data-v="'+k+'"><span class="dot">'+k+'</span><span>'+o+'</span></button>';
+    });
+    h+='</div><div class="ctrl"><button class="ghost" type="button" id="prev"'+(i===0?' disabled':'')+'>← Назад</button>'+
+      (ans[i]!==null?'<button class="ghost" type="button" id="next">Далее →</button>':'<span></span>')+'</div></div>';
+    stage.innerHTML=h;
+    stage.querySelectorAll('.opt').forEach(function(b){
+      b.onclick=function(){
+        if(busy)return;busy=true;
+        ans[i]=+b.getAttribute('data-v');
+        stage.querySelectorAll('.opt').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-checked','false')});
+        b.classList.add('on');b.setAttribute('aria-checked','true');progress();
+        setTimeout(function(){ i<Q.length-1 ? show(i+1) : result(); },340);
+      };
+    });
+    var p=document.getElementById('prev');if(p&&i>0)p.onclick=function(){show(i-1)};
+    var n=document.getElementById('next');if(n)n.onclick=function(){i<Q.length-1?show(i+1):result()};
+    var first=stage.querySelector('.opt.on')||stage.querySelector('.opt');if(first&&i>0)first.focus({preventScroll:true});
+  }
+
+  function result(){
+    var s=ans.reduce(function(a,b){return a+(b||0)},0), lvl, txt, idx;
+    if(s<=21){idx=0;lvl='Незначительный уровень тревоги';txt='Ваши показатели в пределах нормы. Тревога, если и появляется, не мешает жить и справляться с делами. Если вас что-то беспокоит, сессия-знакомство поможет спокойно во всём разобраться.'}
+    else if(s<=35){idx=1;lvl='Средний уровень тревоги';txt='Тревога заметно влияет на самочувствие и качество жизни. Это сигнал, что организм долго живёт в напряжении. С таким состоянием хорошо работать вместе: найти причины и освоить способы возвращать спокойствие.'}
+    else{idx=2;lvl='Высокий уровень тревоги';txt='Тревога выражена сильно и, вероятно, мешает в повседневной жизни. Не оставайтесь с этим одни: вместе мы найдём источник напряжения и бережно вернём вам ощущение опоры.'}
+    mL.textContent='Результат';fill.style.width='100%';
+    var labs=['0–21 · низкий','22–35 · средний','36–63 · высокий'];
+    var sc='<div class="scale">'+labs.map(function(l,k){return '<div class="'+(k===idx?'on':'')+'">'+l+'</div>'}).join('')+'</div>';
+    stage.innerHTML='<div class="fade" style="display:flex;flex-direction:column;gap:28px">'+
+      '<div class="score"><b>'+s+'</b><span>баллов из 63</span></div>'+sc+
+      '<div class="level">'+lvl+'</div><p class="hint">'+txt+'</p>'+
+      '<div style="display:flex;flex-wrap:wrap;gap:16px"><a class="btn-gold" href="#book" id="toBook">Записаться на консультацию</a><button class="btn-line" type="button" id="again">Пройти заново</button></div></div>';
+    document.getElementById('again').onclick=function(){ans.fill(null);show(0)};
+    document.getElementById('toBook').onclick=function(e){e.preventDefault();select.value='intro';smoothTo(document.getElementById('book'))};
+  }
+
+  document.querySelectorAll('.js-test').forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      var it=document.getElementById('anxiety');
+      if(!it.classList.contains('open')) it.querySelector('.qh').click();
+      setTimeout(function(){smoothTo(it)},300);
+    });
+  });
+  intro();
+
+  /* ---------- Форма и всплывающее окно ---------- */
+  var modal=document.getElementById('modal'),lastFocus=null;
+  function openModal(){
+    lastFocus=document.activeElement;
+    modal.classList.add('show');modal.setAttribute('aria-hidden','false');
+    setTimeout(function(){document.getElementById('mOk').focus()},50);
+  }
+  function closeModal(){
+    modal.classList.remove('show');modal.setAttribute('aria-hidden','true');
+    if(lastFocus&&lastFocus.focus)lastFocus.focus({preventScroll:true});
+  }
+  document.getElementById('mClose').onclick=closeModal;
+  document.getElementById('mOk').onclick=closeModal;
+  modal.addEventListener('click',function(e){if(e.target===modal)closeModal()});
+  modal.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()});
+
+  var reader=document.getElementById('reader'),pubBtn=document.getElementById('pubOpen');
+  function openReader(){reader.classList.add('show');reader.setAttribute('aria-hidden','false');reader.querySelector('.box').scrollTop=0;setTimeout(function(){document.getElementById('rClose').focus()},50)}
+  function closeReader(){reader.classList.remove('show');reader.setAttribute('aria-hidden','true');pubBtn.focus({preventScroll:true})}
+  pubBtn.addEventListener('click',openReader);
+  document.getElementById('rClose').onclick=closeReader;
+  reader.addEventListener('click',function(e){if(e.target===reader)closeReader()});
+  reader.addEventListener('keydown',function(e){if(e.key==='Escape')closeReader()});
+  document.getElementById('artBook').addEventListener('click',function(e){e.preventDefault();reader.classList.remove('show');reader.setAttribute('aria-hidden','true');select.value='intro';smoothTo(document.getElementById('book'))});
+
+  /* Юридические документы во всплывающих окнах */
+  var docOpener=null;
+  function closeDoc(m){m.classList.remove('show');m.setAttribute('aria-hidden','true');if(docOpener&&docOpener.focus)docOpener.focus({preventScroll:true})}
+  document.querySelectorAll('[data-doc]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      var m=document.getElementById('doc-'+a.getAttribute('data-doc'));if(!m)return;
+      docOpener=a;m.classList.add('show');m.setAttribute('aria-hidden','false');
+      m.querySelector('.box').scrollTop=0;
+      setTimeout(function(){m.querySelector('.doc-close').focus()},50);
+    });
+  });
+  document.querySelectorAll('.modal.doc').forEach(function(m){
+    m.querySelector('.doc-close').onclick=function(){closeDoc(m)};
+    m.addEventListener('click',function(e){if(e.target===m)closeDoc(m)});
+    m.addEventListener('keydown',function(e){if(e.key==='Escape')closeDoc(m)});
+  });
+
+  /* Форма FormDesigner доступна только после обеих галочек */
+  var agreeBox=document.getElementById('fAgree'),policyBox=document.getElementById('fPolicy'),fdWrap=document.getElementById('fdWrap'),fHint=document.getElementById('fHint');
+  function syncSubmit(){
+    var ok=agreeBox.checked&&policyBox.checked;
+    fdWrap.classList.toggle('locked',!ok);
+    if(ok){fdWrap.removeAttribute('inert');fdWrap.removeAttribute('aria-disabled')}
+    else{fdWrap.setAttribute('inert','');fdWrap.setAttribute('aria-disabled','true')}
+    fHint.classList.toggle('ok',ok);
+  }
+  agreeBox.addEventListener('change',syncSubmit);
+  policyBox.addEventListener('change',syncSubmit);
+  syncSubmit();
+
+  /* Телефон и почта: на телефоне открывают звонок и почту, а ещё копируются в буфер обмена */
+  var toast=document.createElement('div');toast.className='copy-toast';toast.setAttribute('role','status');document.getElementById('ov').appendChild(toast);
+  var tt;
+  function showToast(t){toast.textContent=t;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show')},2600)}
+  function copyText(text,done){
+    function fb(){var ta=document.createElement('textarea');ta.value=text;ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();var ok=false;try{ok=document.execCommand('copy')}catch(e){}document.body.removeChild(ta);done(ok)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(function(){done(true)},fb)}else fb();
+  }
+  document.querySelectorAll('#ov a[href^="tel:"], #ov a[href^="mailto:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      var isTel=a.getAttribute('href').indexOf('tel:')===0,val=a.textContent.trim();
+      copyText(val,function(ok){
+        showToast(ok?(isTel?'Номер скопирован: ':'Адрес скопирован: ')+val:(isTel?'Телефон: ':'Почта: ')+val);
+      });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
