@@ -282,7 +282,9 @@ body{background:var(--black);color:var(--white)}
 #ov .score b{font-family:var(--display);font-weight:200;font-size:clamp(64px,9vw,100px);line-height:.9;color:var(--gold-hi);font-variant-numeric:lining-nums}
 #ov .score span{font-family:var(--display);font-size:12px;color:var(--muted);letter-spacing:.16em;text-transform:uppercase}
 #ov .scale{display:grid;grid-template-columns:22fr 14fr 28fr;gap:4px}
-#ov .scale div{display:flex;flex-direction:column;gap:8px;font-size:12px;color:var(--muted);letter-spacing:.04em}
+#ov .scale div{display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.35;color:var(--muted);letter-spacing:.04em;min-width:0;-webkit-hyphens:auto;hyphens:auto}
+#ov .scale div span:first-child{font-variant-numeric:tabular-nums}
+@media (max-width:600px){#ov .scale div{font-size:10px;letter-spacing:0}}
 #ov .scale div::before{content:"";height:4px;background:var(--line)}
 #ov .scale div.on{color:var(--gold-hi)}
 #ov .scale div.on::before{background:var(--gold)}
@@ -298,6 +300,11 @@ body{background:var(--black);color:var(--white)}
 #ov .book .orn{justify-content:flex-start}
 #ov .book .orn::before{display:none}
 #ov .contacts{display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--muted)}
+/* Яндекс Форма: видимая высота рамки и высота самой формы.
+   Если кнопка «Отправить» обрезана — увеличьте первое число; если виден подвал Яндекса — уменьшите. */
+#ov .ya-box{width:100%;max-width:650px;height:390px;overflow:hidden;position:relative;background:#18181A}
+#ov .ya-box iframe{position:absolute;top:0;left:0;width:100%;height:480px;border:0;background:#18181A}
+@media (max-width:600px){#ov .ya-box{height:450px}#ov .ya-box iframe{height:560px}}
 #ov .fd-card{--gap:var(--card);background:var(--card);padding:clamp(26px,4.5vw,52px);display:flex;flex-direction:column;gap:18px;min-width:0}
 #ov .fd-card .fhint{margin:0;text-align:left}
 #ov .consents{display:flex;flex-direction:column;gap:14px;padding-top:18px;border-top:1px solid var(--line)}
@@ -367,7 +374,6 @@ body{background:var(--black);color:var(--white)}
         <a href="#edu">Квалификация</a>
         <a href="#help">Запросы</a>
         <a href="#prices">Услуги</a>
-        <a href="#anxiety" class="js-test">Тест</a>
         <a href="#book">Запись</a>
       </nav>
       <a class="btn-line js-book" href="#book" style="min-height:44px;padding:0 22px">Записаться</a>
@@ -459,7 +465,7 @@ body{background:var(--black);color:var(--white)}
             <ul><li>Неуверенность</li><li>Синдром самозванца</li><li>Перфекционизм</li><li>Зависимость от одобрения</li></ul>
           </div></div></div>
         </div>
-        <div class="item">
+        <div class="item" id="mood">
           <button class="qh" type="button" aria-expanded="false"><span class="n">03</span><span class="t">Эмоциональные состояния</span><span class="pm" aria-hidden="true"></span></button>
           <div class="qb"><div><div class="in">
             <p>Помогаю распознавать и проживать чувства, а не подавлять их. Работаем с апатией, раздражительностью, эмоциональными качелями и ощущением пустоты.</p>
@@ -471,12 +477,6 @@ body{background:var(--black);color:var(--white)}
           <div class="qb"><div><div class="in">
             <p>Находим корни тревоги и осваиваем способы с ней справляться: от быстрых техник успокоения до глубинной работы с причиной страхов.</p>
             <ul><li>Генерализованная тревога</li><li>Панические атаки</li><li>Страх будущего</li><li>Навязчивые мысли</li></ul>
-            <div class="test frame" id="test">
-              <div class="test-title">Шкала тревоги Бека</div>
-              <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="21" aria-valuenow="0" aria-label="Прогресс теста" id="bar"><i id="barFill"></i></div>
-              <div class="meta"><span id="metaL">Начало</span><span id="metaR">0 / 21</span></div>
-              <div class="stage" id="stage" aria-live="polite"></div>
-            </div>
           </div></div></div>
         </div>
       </div>
@@ -591,14 +591,11 @@ body{background:var(--black);color:var(--white)}
         <p class="fhint" id="fHint">Чтобы заполнить форму, отметьте обе галочки под ней.</p>
         <div class="fd-wrap locked" id="fdWrap" inert>
           <!-- ===== Яндекс Форма ===== -->
-          <div style="width: 100%; max-width: 650px; height: 330px; overflow: hidden; position: relative; background-color: #18181A;">
+          <div class="ya-box">
             <iframe src="https://forms.yandex.ru/u/6aeb179a1f1eb5ad5570285f?iframe=1"
                     frameborder="0"
                     name="ya-form-6aeb179a1f1eb5ad5570285f"
-                    width="100%"
-                    height="460px"
-                    title="Запись на консультацию"
-                    style="position: absolute; top: 0; left: 0; border: none; background-color: #18181A;">
+                    title="Запись на консультацию">
             </iframe>
           </div>
           <!-- ===== конец Яндекс Формы ===== -->
@@ -1047,79 +1044,6 @@ body{background:var(--black);color:var(--white)}
     });
   });
 
-  /* ---------- Тест: Шкала тревоги Бека ---------- */
-  var Q=['Ощущение онемения или покалывания в теле','Ощущение жара','Дрожь в ногах','Неспособность расслабиться','Страх, что произойдёт самое плохое','Головокружение или ощущение лёгкости в голове','Ускоренное сердцебиение','Неустойчивость','Ощущение ужаса','Нервозность','Ощущение удушья','Дрожь в руках','Шаткость походки','Страх утраты контроля','Затруднённое дыхание','Страх смерти','Испуг','Неприятные ощущения в желудке','Ощущение предобморочного состояния','Приливы крови к лицу','Усиленная потливость, не связанная с жарой'];
-  var OPT=['Совсем не беспокоило','Слегка, не слишком беспокоило','Умеренно: неприятно, но можно было терпеть','Очень сильно: с трудом могла (мог) это выносить'];
-  var ans=new Array(Q.length).fill(null), cur=-1, busy=false;
-  var stage=document.getElementById('stage'),fill=document.getElementById('barFill'),bar=document.getElementById('bar'),mL=document.getElementById('metaL'),mR=document.getElementById('metaR');
-
-  function progress(){
-    var done=ans.filter(function(a){return a!==null}).length;
-    fill.style.width=(done/Q.length*100)+'%';
-    bar.setAttribute('aria-valuenow',done);
-    mR.textContent=done+' / '+Q.length;
-  }
-  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-
-  function intro(){
-    cur=-1;mL.textContent='Начало';progress();
-    stage.innerHTML='<div class="fade" style="display:flex;flex-direction:column;gap:28px">'+
-      '<h3>Насколько вас беспокоила тревога в последнее время?</h3>'+
-      '<p class="hint">Перед вами 21 ощущение. Отметьте, насколько сильно каждое из них беспокоило вас <span style="color:var(--gold-hi)">за последнюю неделю, включая сегодняшний день</span>. Отвечайте не задумываясь долго: первая реакция обычно самая точная.</p>'+
-      '<div><button class="btn-gold" type="button" id="start">Начать тест</button></div></div>';
-    document.getElementById('start').onclick=function(){show(0)};
-  }
-
-  function show(i){
-    cur=i;busy=false;mL.textContent='Вопрос '+(i+1);progress();
-    var h='<div class="fade" style="display:flex;flex-direction:column;gap:28px">'+
-      '<h3>'+esc(Q[i])+'</h3><div class="opts" role="radiogroup" aria-label="'+esc(Q[i])+'">';
-    OPT.forEach(function(o,k){
-      var on=ans[i]===k;
-      h+='<button type="button" role="radio" aria-checked="'+on+'" class="opt'+(on?' on':'')+'" data-v="'+k+'"><span class="dot">'+k+'</span><span>'+o+'</span></button>';
-    });
-    h+='</div><div class="ctrl"><button class="ghost" type="button" id="prev"'+(i===0?' disabled':'')+'>← Назад</button>'+
-      (ans[i]!==null?'<button class="ghost" type="button" id="next">Далее →</button>':'<span></span>')+'</div></div>';
-    stage.innerHTML=h;
-    stage.querySelectorAll('.opt').forEach(function(b){
-      b.onclick=function(){
-        if(busy)return;busy=true;
-        ans[i]=+b.getAttribute('data-v');
-        stage.querySelectorAll('.opt').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-checked','false')});
-        b.classList.add('on');b.setAttribute('aria-checked','true');progress();
-        setTimeout(function(){ i<Q.length-1 ? show(i+1) : result(); },340);
-      };
-    });
-    var p=document.getElementById('prev');if(p&&i>0)p.onclick=function(){show(i-1)};
-    var n=document.getElementById('next');if(n)n.onclick=function(){i<Q.length-1?show(i+1):result()};
-    var first=stage.querySelector('.opt.on')||stage.querySelector('.opt');if(first&&i>0)first.focus({preventScroll:true});
-  }
-
-  function result(){
-    var s=ans.reduce(function(a,b){return a+(b||0)},0), lvl, txt, idx;
-    if(s<=21){idx=0;lvl='Незначительный уровень тревоги';txt='Ваши показатели в пределах нормы. Тревога, если и появляется, не мешает жить и справляться с делами. Если вас что-то беспокоит, сессия-знакомство поможет спокойно во всём разобраться.'}
-    else if(s<=35){idx=1;lvl='Средний уровень тревоги';txt='Тревога заметно влияет на самочувствие и качество жизни. Это сигнал, что организм долго живёт в напряжении. С таким состоянием хорошо работать вместе: найти причины и освоить способы возвращать спокойствие.'}
-    else{idx=2;lvl='Высокий уровень тревоги';txt='Тревога выражена сильно и, вероятно, мешает в повседневной жизни. Не оставайтесь с этим одни: вместе мы найдём источник напряжения и бережно вернём вам ощущение опоры.'}
-    mL.textContent='Результат';fill.style.width='100%';
-    var labs=['0–21 · низкий','22–35 · средний','36–63 · высокий'];
-    var sc='<div class="scale">'+labs.map(function(l,k){return '<div class="'+(k===idx?'on':'')+'">'+l+'</div>'}).join('')+'</div>';
-    stage.innerHTML='<div class="fade" style="display:flex;flex-direction:column;gap:28px">'+
-      '<div class="score"><b>'+s+'</b><span>баллов из 63</span></div>'+sc+
-      '<div class="level">'+lvl+'</div><p class="hint">'+txt+'</p>'+
-      '<div style="display:flex;flex-wrap:wrap;gap:16px"><a class="btn-gold" href="#book" id="toBook">Записаться на консультацию</a><button class="btn-line" type="button" id="again">Пройти заново</button></div></div>';
-    document.getElementById('again').onclick=function(){ans.fill(null);show(0)};
-    document.getElementById('toBook').onclick=function(e){e.preventDefault();select.value='intro';smoothTo(document.getElementById('book'))};
-  }
-
-  document.querySelectorAll('.js-test').forEach(function(a){
-    a.addEventListener('click',function(e){
-      e.preventDefault();
-      var it=document.getElementById('anxiety');
-      if(!it.classList.contains('open')) it.querySelector('.qh').click();
-      setTimeout(function(){smoothTo(it)},300);
-    });
-  });
-  intro();
 
   /* ---------- Форма и всплывающее окно ---------- */
   var modal=document.getElementById('modal'),lastFocus=null;
